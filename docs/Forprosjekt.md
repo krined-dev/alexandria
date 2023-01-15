@@ -63,7 +63,11 @@ Hovedteknologier som skal brukes for tjenesten
 * Gradle som byggverktøy
 * Docker og docker-compose for kontainer kjøremiljø og oppsett
 * MySql database
+
+### Dataflyt i applikasjonen
+Grønne ruter skal implementeres som en den av prosjektet.
 ```mermaid
+
 
 flowchart TB
     subgraph Registry[Registry - internal]
