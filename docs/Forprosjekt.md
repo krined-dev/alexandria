@@ -49,7 +49,20 @@ Det er da også naturlig at det implementeres en klient til APIet i registrenes 
 i SQL databasen, men heller i en type in-memory database for raskere oppslag i applikasjonen. In-memory databasen settes opp slik at den oppdateres hver gang det kommer nye koder i REST APIet. 
 
 ### 1.2 Prosjektbeskrivelse og analyse
+Kvalitetsregister teamet bruker JVM teknologier for sin utvikling, da spesifikt Java og Kotlin, der hovedkodebasen
+er en monolitt skrevet i Java som tar i bruk mange ulike teknologier. Ny kode skrives som regel i Kotlin. Tjenester
+som er ekstern til monolitten skrives i Kotlin. Med dette tatt i betraktning skal også denne tjenesten skrives i
+Kotlin. Alle nye tjenester kjører i kontainermiljø, der produksjonsmiljøet er driftet av Norsk Helse Nett(NHN). 
+Hele kvalitetsregisterplatformen til HN-IKT er i en migreringsprosess der den skal over i Kubernetes. Det er derfor
+viktig at applikasjonen utvikles slik at den enkelt kan kjøre i et slik miljø.
 
+Hovedteknologier som skal brukes for tjenesten
+* Kotlin
+* Ktor web server og http klient rammeverk
+* R2DBC for databasetilgang
+* Gradle som byggverktøy
+* Docker og docker-compose for kontainer kjøremiljø og oppsett
+* MySql database
 ```mermaid
 
 flowchart TB
@@ -67,4 +80,11 @@ flowchart TB
     fileUpload[File Upload]<-->alexFileReader
     API[Web API]<-->alexHttp
     end
+    style alex fill:#98fab7,stroke:#333,stroke-width:4px
+    style alexDb fill:#98fab7,stroke:#333,stroke-width:4px
+    style alexHttp fill:#98fab7,stroke:#333,stroke-width:4px
+    style alexFileReader fill:#98fab7,stroke:#333,stroke-width:4px
+    style http fill:#98fab7,stroke:#333,stroke-width:4px
+    style db fill:#98fab7,stroke:#333,stroke-width:4px
 ```
+Fig 1. Dataflyt i applikasjonen
