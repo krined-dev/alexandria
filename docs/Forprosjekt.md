@@ -45,8 +45,14 @@ Det er derfor ønskelig med en felles tjeneste som kan hente inn koder fra ulike
 så å levere de til register applikasjonene via et REST API. Det er altså ønskelig automatisere oppdaterings prosessen i størs mulig grad, 
 og på denne måten kunne tilby mest mulig oppdatert data.
 
-Det er da også naturlig at det implementeres en klient til APIet i registrenes felles kode. Da er det naturlig å tenke at koder ikke lengre lagres
-i SQL databasen, men heller i en type in-memory database for raskere oppslag i applikasjonen. In-memory databasen settes opp slik at den oppdateres hver gang det kommer nye koder i REST APIet. 
+Det er da også naturlig at det implementeres en klient til APIet i registrenes felles kode. Da er det naturlig å tenke at 
+koder ikke lengre lagres i SQL databasen, men heller i en type in-memory database for raskere oppslag i applikasjonen. 
+In-memory databasen settes opp slik at den oppdateres hver gang det kommer nye koder i REST APIet. 
+
+Det er også uttrykt et ønske om mulighet for laste versjonerte dokumenter inn i applikasjonen som kan lagres som binary
+blobs. De skal også tilgjengeliggjøres via APIet. Dette ønskes da hvert kvalitetsregister lagrer og tilgjengeligjør et antall
+dokumenter for ulike formål. Det lagres også maler for meldinger som skal sendes til inbyggere. Det er da ønskelig å ha en
+felles portal for å oppdatere og tilgjengeligjøre disse dokumentene. 
 
 ### 1.2 Prosjektbeskrivelse og analyse
 Utviklingen vil foregå i to ulike kodebaser. Selve tjenesten som skal hente data fra eksterne kilder og i den eksisterende register koden der HTTP klient og in-memory database skal etableres.
@@ -74,7 +80,7 @@ Applikasjonen vil bestå av minimum følgende komponenter:
 ### Dataflyt i applikasjonen
 Grønne ruter skal implementeres som en den av prosjektet.
 ```mermaid
-flowchart TB
+flowchart LR
     subgraph Registry[Registry - internal]
     jsp[Frontend]<-->backend[Backend java]<-->db[Database Service]
     db<-->realDb[In memory DB]
@@ -107,7 +113,7 @@ flowchart TB
     style http fill:#98fab7,stroke:#333,stroke-width:4px
     style db fill:#98fab7,stroke:#333,stroke-width:4px
 ```
-Fig 1. Dataflyt i applikasjonen
+Fig 1. Dataflyt i applikasjonen. Generert med mermaid
 
 
 **Teknologier:**
@@ -127,4 +133,43 @@ Hovedteknologier som skal brukes for tjenesten
 * Docker og docker-compose for kontainer kjøremiljø og oppsett
 * MySql database
 
+### 1.4 Rammebetingelser
+Utvikling kan skje fra egen PC. Anbefalt å bruke IntelliJ IDEA for utvikling av Kotlin kode. Team for kvalitetsregister må 
+tilgjengeligjøre kildekode for utvikling av komponenter som er intern i register koden, eventuelt veilede i hvordan et
+eksternt lib kan opprettes slik det kan føyes inn i applikaskjonen. 
+
+## Brukere, brukermiljø og behov.
+
+### 2.1 Brukere
+
+Teknisk bruker av applikasjonen er da team for kvalitetsregister ved HN-IKT. 
+ 
+Sluttbrukerene er her følgende kvalitetsregister:
+ * Norsk gynekologisk endoskopiregister
+ * Norsk register for invasiv kardiologi
+ * Norsk kvalitetsregister for behandling av spiseforstyrrelser
+ * Norsk register for arvelige og medfødte nevromuskulære sykdommer
+ * Register for Hidradenitis supprativa
+ * Norsk register for analinkontinens
+ * Norsk register for gastrokirurgi
+ * Norsk kvalitetsregister for endokarditt
+ * Nasjonalt kvalitetsregister for ryggkirurgi
+
+### 2.2 Brukermiljø
+
+Applikasjonen blir en intern del av kvalitetsregister mikrotjeneste platformen, da den i hovedsak erstatter det som i dag er
+en tungvindt og manuell prosess. Dette vil igjen påvirkere brukerene av kvalitetsregistrene som vil oppleve at kvalitetsregistrene stadig er oppdatert med nyeste versjoner av kodeverkene. 
+
+Sluttbrukerene vil ikke oppleve endringer på bakgrunn av dette arbeidet i daglig bruk av registeret. 
+Den merkbare forskjellen er at det ikke vil ligge noen forsinkelse fra publisering av ny data til den er tilgjengelig i
+register-frontenden. 
+
+### 2.3 Sammendrag av brukerens behov
+| Behov | Prioritet | Påvirker | Dagens Løsning | Foreslått løsning |
+| ----- | --------- | -------- | -------------- | ----------------- |
+| Automatisk datafangst | Høy | Alle brukere | Manuell innhenting | Hente fra eksterne kilder via web API |
+| Versjonering | Høy | Alle brukere | Manuelt ved lagring i database | Automatisk ved lagring i database |
+| Tilgjengeligjøring av oppdatert data | Høy | Alle brukere | Manuell prosess   | Automatisk ved  innhenting av ny data |
+| Mellomlagring i selve registeret | medium | Alle brukere | Lagres i MySql | Lagre in-memory. f.eks REDIS |
+| Tilgjengeligjøring av dokumenter | medium | Alle brukere | Lagres i ressurs mapper | Lagre versjonert i database |
 
