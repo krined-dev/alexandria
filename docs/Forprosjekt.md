@@ -504,6 +504,8 @@ Scrum Events
 
 Sprint 
 
+![Scrum](res_forprosjekt/fig-what-is-scrum.png)
+
 Sprint er en kort tidsbegrenset periode, der Scrum Team jobber med å fullføre en del av arbeidsoppgaver fra Product Backlog. [bok:essential scrum]       
 
  
@@ -549,10 +551,12 @@ Epics inkluderer en stor del av arbeid og er ofte delt inn i mindre deler, som U
 Scrum Master starter Sprint etter at de første elementene i Product Backlog er definert. Det er mulig å velge start og slutt dato, sette mål og tildele Sprinten bestemte oppgaver. Scrum Master stopper Sprint når den er ferdig. [jira software] 
 
 Roadmap gir en oversikt over alle Epics og viser hvor lang tid en bestemt Epic tar i løpet av Sprinten. [jira software] 
+![Jira-2](res_forprosjekt/fig-jira-2.png)
 
 Scrum Board er delt inn tre hoveddeler: TO DO, IN PROGRESS og DONE. Development Team styrer sitt arbeid ved å flytte arbeidsoppgaver på forskjellige steder av Scrum Board. Det finnes også mulighet til å legge til ekstra deler, for eksempel TESTING. [jira software] 
 
  
+![Jira-1](res_forprosjekt/fig-jira-1.png)
 
 Graphical user interface, application, Teams
 
@@ -563,8 +567,6 @@ Figur 3 Jira Software
 Jira Software gir mulighet til å lage diverse rapporter og grafer, som burnup rapport, velocity rapport, cycle time rapport, sprint burndown chart, cumulative flow diagram osv. Dette blir til en stor hjelp ved styring av prosjektarbeid og ferdigstillelse av nødvendig dokumentasjon. [jira software] 
 
 7 Arbeidsavtale / Rollefordeling 
-
- 
 
 7.1 Samarbeidsavtale 
 
