@@ -49,7 +49,7 @@ med å utvikle platform for kvalitetsregister samt de spesfikke register.
 Et medisinsk kvalitetsregister er en registreringsløsning for medisinske data relatert til et spesifikt fagfelt, der data samles
  inn for å brukes til forskning. Et eksempel på et slikt register er Norsk Gynekologisk Endoskopi Register(NGER). 
 
-Registeret samler inn data om:
+Registeret samler inn data om[@1-kvalitetsregistre.no]:
 
 * Konvertering til laparoskopi (ut fra hysteroskopi)/ laparotomi (ut fra hysteroskopi, laparoskopi)
 * Intraoperative komplikasjoner
