@@ -492,33 +492,31 @@ Som utviklingsmetode ble det valgt Scrum rammeverket. I dette kapittelet skal de
 
 **Scrum** 
 
-Scrum er det mest brukte smidige rammeverket, som benyttes til utvikling av innovative produkter og tjenester. Alle Scrum Team medlemmer prøver å oppnå det samme målet uansett hvilken rolle de har. [bok:essential scrum]  
+Scrum er det mest brukte smidige rammeverket, som benyttes til utvikling av innovative produkter og tjenester. Alle Scrum Team medlemmer prøver å oppnå det samme målet uansett hvilken rolle de har [@6-book-essential-scrum].   
 
 **Scrum består av:** 
 
-**Roller:** Product Owner, Scrum Master, Developers Team 
+**Roller:** Product Owner, Scrum Master, Developers Team [@6-book-essential-scrum] 
 
-**Hendelser:** Sprint, Sprint Planning, Daily Scrum, Sprint Execution, Sprint Review, Sprint Retrospective, Product Backlog grooming 
+**Hendelser:** Sprint, Sprint Planning, Daily Scrum, Sprint Execution, Sprint Review, Sprint Retrospective, Product Backlog grooming [@6-book-essential-scrum] 
 
-**Artefakter:** Product Backlog, Sprint Backlog og Product Increment 
-
-[bok:essential scrum]  
+**Artefakter:** Product Backlog, Sprint Backlog og Product Increment [@6-book-essential-scrum] 
 
 **Scrum Team** 
 
-Scrum Team er den grunnleggende enheten i Scrum. Det er et lite gruppe av mennesker, som består av Product Owner, Scrum Master og Developers. De har forskjellig ansvar og påvirkningsområder. [bok:guide]   
+Scrum Team er den grunnleggende enheten i Scrum. Det er et lite gruppe av mennesker, som består av Product Owner, Scrum Master og Developers. De har forskjellig ansvar og påvirkningsområder [@6-book-scrum-guiden].     
 
 **Product Owner**  
 
-Product Owner (en produkteier) representerer kunden/oppdragsgiver og er ansvarlig for at Scrum Teamet leverer mest verdi av produktet. En av de viktigste oppgavene til Product Owner er å prioritere elementene i Product Backlog. [bok:guide]        
+Product Owner (en produkteier) representerer kunden/oppdragsgiver og er ansvarlig for at Scrum Teamet leverer mest verdi av produktet. En av de viktigste oppgavene til Product Owner er å prioritere elementene i Product Backlog [@6-book-scrum-guiden].          
 
 **Scrum Master** 
 
-Scrum Master (en Scrum leder) er ansvarlig for etablering av Scrum. En av de viktigste oppgavene til Scrum Master er å sørge for at alle i prosjektgruppen forstår Scrum og bruker den på en riktig måte. Scrum Master er også et viktig bindeledd mellom Product Owner og Development Team. Scrum Master hjelper Product Owner med å definere en produktets verdi, og hjelper Development Team til å levere denne verdien. Den sørger for at Scrum Team fungerer godt og forbedrer seg hele tiden. [bok:guide]    
+Scrum Master (en Scrum leder) er ansvarlig for etablering av Scrum. En av de viktigste oppgavene til Scrum Master er å sørge for at alle i prosjektgruppen forstår Scrum og bruker den på en riktig måte. Scrum Master er også et viktig bindeledd mellom Product Owner og Development Team. Scrum Master hjelper Product Owner med å definere en produktets verdi, og hjelper Development Team til å levere denne verdien. Den sørger for at Scrum Team fungerer godt og forbedrer seg hele tiden [@6-book-scrum-guiden].    
 
 **Development Team** 
 
-Developers (utviklingsteam) er en selvorganisert gruppe av mennesker som gjør selve jobben. Blant oppgaver er planlegging av Sprinten, utarbeidelse av Sprint Backlog, tilpasning av arbeidsplanen og produktutvikling. [bok:guide]        
+Developers (utviklingsteam) er en selvorganisert gruppe av mennesker som gjør selve jobben. Blant oppgaver er planlegging av Sprinten, utarbeidelse av Sprint Backlog, tilpasning av arbeidsplanen og produktutvikling [@6-book-scrum-guiden].         
 
 **Scrum Process** 
 
@@ -526,63 +524,60 @@ Scrum Prosess starter med opprettelsen av Product Backlog.
 
 **Product Backlog** 
 
-Product Backlog er en liste over alle arbeidsoppgaver en prosjektgruppe kan gjøre. Denne listen er ikke fast og kan bli endret avhengig av situasjonen. Elementene i Product Backlog eies og prioriteres av Product Owner. Prosjektgruppe kan starte Scrum Sprint når det er nok elementer i Product Backlog. [bok:essential scrum]   
+Product Backlog er en liste over alle arbeidsoppgaver en prosjektgruppe kan gjøre. Denne listen er ikke fast og kan bli endret avhengig av situasjonen. Elementene i Product Backlog eies og prioriteres av Product Owner. Prosjektgruppe kan starte Scrum Sprint når det er nok elementer i Product Backlog [@6-book-essential-scrum].     
 
 **Scrum Events** 
 
 **Sprint**  
 
-Sprint er en kort tidsbegrenset periode, der Scrum Team jobber med å fullføre en del av arbeidsoppgaver fra Product Backlog. [bok:essential scrum]   
+Sprint er en kort tidsbegrenset periode, der Scrum Team jobber med å fullføre en del av arbeidsoppgaver fra Product Backlog [@6-book-essential-scrum].     
 
 
 ![Scrum](res_forprosjekt/fig-what-is-scrum.png) 
 
 The Scrum Framework 
 
-Figur 1 Scrum Process 
-
-  
+Figur 1 Scrum Process [@6-scrum.com] 
 
 **Sprint Planning** 
 
-Hver Sprint starter med Sprint Planning møte. Product Owner, Scrum Master og Developers Team jobber sammen for å bestemme de mest prioriterte elementene i Product Backlog og setter krav til dem. Alle elementene får estimat, som er innsatsnivå for hvert av disse elementene. Scrum Team bestemmer Sprint Goal, som viser hva den kommende Sprinten skal oppnå. Resultatet av dette møtet er utarbeidet Sprint Backlog. [bok:essential scrum]       
+Hver Sprint starter med Sprint Planning møte. Product Owner, Scrum Master og Developers Team jobber sammen for å bestemme de mest prioriterte elementene i Product Backlog og setter krav til dem. Alle elementene får estimat, som er innsatsnivå for hvert av disse elementene. Scrum Team bestemmer Sprint Goal, som viser hva den kommende Sprinten skal oppnå. Resultatet av dette møtet er utarbeidet Sprint Backlog [@6-book-essential-scrum].         
 
 **Sprint Backlog** 
 
-Sprint Backlog har Sprint Goal og består av et sett med elementer fra Product Backlog, som ble valgt for denne Sprinten. I tillegg inneholder den en arbeidsplan for Developers Team, slik at de kunne levere Product Increment på slutten av Sprinten. [bok:guide]         
+Sprint Backlog har Sprint Goal og består av et sett med elementer fra Product Backlog, som ble valgt for denne Sprinten. I tillegg inneholder den en arbeidsplan for Developers Team, slik at de kunne levere Product Increment på slutten av Sprinten [@6-book-scrum-guiden].           
 
 **Daily Scrum** 
 
-Hver Sprint varer fra to til fire uker. Hver dag møtes prosjektgruppe for Daily Scrum, som er et kort møte, der alle svarer på tre spørsmål: hva gjorde du i går, hva vil du gjøre i dag og er det noen hindringer i veien. [bok:essential scrum]         
+Hver Sprint varer fra to til fire uker. Hver dag møtes prosjektgruppe for Daily Scrum, som er et kort møte, der alle svarer på tre spørsmål: hva gjorde du i går, hva vil du gjøre i dag og er det noen hindringer i veien [@6-book-essential-scrum].           
 
 **Sprint Review** 
 
-Sprint Review utføres på slutten av Sprinten. Ett av de viktigste målene med Sprint Review er å kunne inspisere og tilpasse produktet som skal bygges. Scrum Team sammen med kunder og andre interesserte medlemmer diskuterer implementert funksjonalitet og setter krav til hva som skal gjøres videre. Det leveres Sprint anmeldelse. Product Owner oppdaterer Product Backlog basert på tilbakemeldinger fra kunden. [bok:essential scrum]         
+Sprint Review utføres på slutten av Sprinten. Ett av de viktigste målene med Sprint Review er å kunne inspisere og tilpasse produktet som skal bygges. Scrum Team sammen med kunder og andre interesserte medlemmer diskuterer implementert funksjonalitet og setter krav til hva som skal gjøres videre. Det leveres Sprint anmeldelse. Product Owner oppdaterer Product Backlog basert på tilbakemeldinger fra kunden [@6-book-essential-scrum].           
 
 **Sprint Retrospective** 
 
-Sprint Retrospective også utføres på slutten av Sprinten. Den gir mulighet til å inspisere og tilpasse utviklingsprosess. Scrum Team samles for å diskutere hva som fungerer og ikke fungerer med Scrum, og hvilke forbedringstiltak skal utføres for at prosjektgruppe blir mer produktivt i neste sprinten.  [bok:essential scrum]        
-
- 
+Sprint Retrospective også utføres på slutten av Sprinten. Den gir mulighet til å inspisere og tilpasse utviklingsprosess. Scrum Team samles for å diskutere hva som fungerer og ikke fungerer med Scrum, og hvilke forbedringstiltak skal utføres for at prosjektgruppe blir mer produktivt i neste sprinten [@6-book-essential-scrum].        
 
 ### 6.2 Jira Software 
 
-Jira’s Scrum Project Template er designet for å støtte Scrum prosessen. Mal for prosjektet inkluderer flere Jira’s funksjoner, som Roadmap, Epic, User Story, Timeback Sprints, Reports osv. I dette kapittelet skal det gis en kort beskrivelse av fremgangsmåte for å sette opp Scrum Project i Jira Software og de mest aktuelle Jira’ funksjoner. [jira software] 
+Jira’s Scrum Project Template er designet for å støtte Scrum prosessen. Mal for prosjektet inkluderer flere Jira’s funksjoner, som Roadmap, Epic, User Story, Timeback Sprints, Reports osv. I dette kapittelet skal det gis en kort beskrivelse av fremgangsmåte for å sette opp Scrum Project i Jira Software og de mest aktuelle Jira’ funksjoner [@4-atlassian.com-jira].  
 
-Scrum Master eller administrator lager et Scrum Prosjekt ved hjelp av Jira’s Scrum Project Template. Det ble valgt å bruke Team-Managed Template, som gjør styring av prosjektet mer fleksibelt. Det finnes også mulighet til å koble repositorier, dokumenter og andre filer til prosjektet. [jira software]  
+Scrum Master eller administrator lager et Scrum Prosjekt ved hjelp av Jira’s Scrum Project Template. Det ble valgt å bruke Team-Managed Template, som gjør styring av prosjektet mer fleksibelt. Det finnes også mulighet til å koble repositorier, dokumenter og andre filer til prosjektet [@4-atlassian.com-jira].   
 
-Først lages det en Product Backlog, som inkluderer alle elementene som kan bli utviklet. PBI (Product Backlog Item) skal ha en detaljert beskrivelse, prioritet og estimat. Til estimering av elementene i Product Backlog brukes såkalte Story Points. Story Points er basert på Fibonacci sekvens. Vanligvis varierer antall Story Points fra 1 til 13 for en Sprint. [https://www.lucidchart.com/blog/fibonacci-scale-for-agile-estimation] 
+Først lages det en Product Backlog, som inkluderer alle elementene som kan bli utviklet. PBI (Product Backlog Item) skal ha en detaljert beskrivelse, prioritet og estimat. Til estimering av elementene i Product Backlog brukes såkalte Story Points. Story Points er basert på Fibonacci sekvens. Vanligvis varierer antall Story Points fra 1 til 13 for en Sprint [@6-lucidchart.com].  
 
-Epics inkluderer en stor del av arbeid og er ofte delt inn i mindre deler, som User Stories, Task, Subtasks og Bugs. Det kan ta flere Sprints for å fullføre en Epic. Forskjellige Epics kan bli koblet til hverandre ved hjelp av avhengigheter. [jira software] 
+Epics inkluderer en stor del av arbeid og er ofte delt inn i mindre deler, som User Stories, Task, Subtasks og Bugs. Det kan ta flere Sprints for å fullføre en Epic. Forskjellige Epics kan bli koblet til hverandre ved hjelp av avhengigheter [@4-atlassian.com-jira].   
 
-Scrum Master starter Sprint etter at de første elementene i Product Backlog er definert. Det er mulig å velge start og slutt dato, sette mål og tildele Sprinten bestemte oppgaver. Scrum Master stopper Sprint når den er ferdig. [jira software] 
+Scrum Master starter Sprint etter at de første elementene i Product Backlog er definert. Det er mulig å velge start og slutt dato, sette mål og tildele Sprinten bestemte oppgaver. Scrum Master stopper Sprint når den er ferdig [@4-atlassian.com-jira].   
 
 
-Roadmap gir en oversikt over alle Epics og viser hvor lang tid en bestemt Epic tar i løpet av Sprinten. [jira software] 
+Roadmap gir en oversikt over alle Epics og viser hvor lang tid en bestemt Epic tar i løpet av Sprinten [@4-atlassian.com-jira].   
+
 ![Jira-2](res_forprosjekt/fig-jira-2.png)
 
 
-Scrum Board er delt inn tre hoveddeler: TO DO, IN PROGRESS og DONE. Development Team styrer sitt arbeid ved å flytte arbeidsoppgaver på forskjellige steder av Scrum Board. Det finnes også mulighet til å legge til ekstra deler, for eksempel TESTING. [jira software] 
+Scrum Board er delt inn tre hoveddeler: TO DO, IN PROGRESS og DONE. Development Team styrer sitt arbeid ved å flytte arbeidsoppgaver på forskjellige steder av Scrum Board. Det finnes også mulighet til å legge til ekstra deler, for eksempel TESTING [@4-atlassian.com-jira].   
 
  
 ![Jira-1](res_forprosjekt/fig-jira-1.png)
@@ -594,7 +589,7 @@ Description automatically generated
 Figur 3 Jira Software 
 
 
-Jira Software gir mulighet til å lage diverse rapporter og grafer, som burnup rapport, velocity rapport, cycle time rapport, sprint burndown chart, cumulative flow diagram osv. Dette blir til en stor hjelp ved styring av prosjektarbeid og ferdigstillelse av nødvendig dokumentasjon. [jira software] 
+Jira Software gir mulighet til å lage diverse rapporter og grafer, som burnup rapport, velocity rapport, cycle time rapport, sprint burndown chart, cumulative flow diagram osv. Dette blir til en stor hjelp ved styring av prosjektarbeid og ferdigstillelse av nødvendig dokumentasjon [@4-atlassian.com-jira].   
 
 ## 7 Arbeidsavtale / Rollefordeling 
 
@@ -606,7 +601,7 @@ Se vedlegg
 
 #### 7.2.1 Rollefordeling / Prosjektorganisering / Organisasjonskart 
 
-Prosjektgruppe skal bruke Scrum som utviklingsmetode. Alle gruppemedlemmer i en Scrum Team skal jobbe sammen mot et felles mål. Oppdragsgiver er Helse Nord IKT, og Product Owner er Torkil Grindstein som er et viktig bindeledd mellom oppdragsgiver og resten av Scrum Team.  Scrum Master er Kristian Nedrevold, og er en prosjektleder som styrer prosjektarbeid. Prosjektgruppe (Developers Team) består av Kristian Nedrevold og Daria Danilina som skal jobbe sammen for å levere best mulig produkt til oppdragsgiver og utarbeide all nødvendig dokumentasjon. Organisasjonskart viser rollefordeling i en Scrum Team og er presentert i Figur 4.     
+Prosjektgruppe skal bruke Scrum som utviklingsmetode. Alle gruppemedlemmer i en Scrum Team skal jobbe sammen mot et felles mål. Oppdragsgiver er Helse Nord IKT, og Product Owner er Torkil Grindstein som er et viktig bindeledd mellom oppdragsgiver og resten av Scrum Team.  Scrum Master er Kristian Nedrevold, og er en prosjektleder som styrer prosjektarbeid. Prosjektgruppe (Developers Team) består av Kristian Nedrevold og Daria Danilina som skal jobbe sammen for å levere best mulig produkt til oppdragsgiver og utarbeide all nødvendig dokumentasjon. Organisasjonskart viser rollefordeling i en Scrum Team og er presentert i Figur X.     
 
 
 ```mermaid
@@ -634,7 +629,7 @@ style E fill:#e6f5f7,stroke:#333,stroke-width:1px
 ```
 
 
-Figur 4 Organisasjonskart (Danilina, Daria, 2023) 
+Figur X Organisasjonskart (Danilina, Daria, 2023) 
 
 #### 7.2.2 Ansvarsfordeling 
 
