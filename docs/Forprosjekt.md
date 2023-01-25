@@ -62,7 +62,7 @@ Registeret samler inn data om[@1-kvalitetsregistre.no]:
 
 Ved å samle inn data fra alle pasienter som blir endoskopisk operert for gynekologiske tilstander og sykdommer ved offentlige og private
 sykehus er det da mulig å utføre statistike analyser for å identifisere positive og negative aspekter ved det enkelte behandlignssted og
-på tvers av behandlingssted. 
+på tvers av behandlingssted [@1-kvalitetsregistre.no]. 
 
 [ref]https://www.kvalitetsregistre.no/register/gynekologi/norsk-gynekologisk-endoskopiregister
 
@@ -257,21 +257,20 @@ Det er planlagt å bruke ulike informasjonskilder slik som bøker, internettkild
 
 #### 4.2.1 Bakgrunn for risikoanalyse 
 
-I starten av hvert prosjekt er det viktig å vurdere mulige risikoer som kan oppstå underveis. Godt utført risikoanalyse gir prosjektgruppe en bedre oversikt over problemer, som kan oppstå under prosjektgjennomføringen. Dette gir mulighet til å iverksette risikoreduserende tiltak i tide og minimere risikoen for å ikke fullføre prosjektet. [Forelesning.V3.Risikoanalyse] 
+I starten av hvert prosjekt er det viktig å vurdere mulige risikoer som kan oppstå underveis. Godt utført risikoanalyse gir prosjektgruppe en bedre oversikt over problemer, som kan oppstå under prosjektgjennomføringen. Dette gir mulighet til å iverksette risikoreduserende tiltak i tide og minimere risikoen for å ikke fullføre prosjektet[@4-forelesning-risikoanalyse]. 
 
-Det ble laget en risikotabell som viser en oversikt over mulige uønskede hendelser. Sannsynlighet og konsekvens vurderes for hver enkelt hendelse. Ved hjelp av en enkel formel beregnes det grad av risiko for gjennomføring av prosjektet. Ut fra resultater kan man vurdere behov for iverksetting av risikoreduserende tiltak. [Forelesning.V3.Risikoanalyse]       
+Det ble laget en risikotabell som viser en oversikt over mulige uønskede hendelser. Sannsynlighet og konsekvens vurderes for hver enkelt hendelse. Ved hjelp av en enkel formel beregnes det grad av risiko for gjennomføring av prosjektet. Ut fra resultater kan man vurdere behov for iverksetting av risikoreduserende tiltak[@4-forelesning-risikoanalyse].         
 
 **Begreper** 
 
-Uønsket hendelse er en hendelse som kan føre til tap av verdier.   
+Uønsket hendelse er en hendelse som kan føre til tap av verdier [@4-norsk-standard].   
 
-Risiko er en kombinasjon av sannsynlighet og konsekvens for en uønsket hendelse.  
+Risiko er en kombinasjon av sannsynlighet og konsekvens for en uønsket hendelse [@4-norsk-standard].  
 
-Sannsynlighet viser i hvilken grad er det trolig at en bestemt hendelse vil inntreffe.   
+Sannsynlighet viser i hvilken grad er det trolig at en bestemt hendelse vil inntreffe [@4-norsk-standard].   
 
-Konsekvens viser mulig følge av en bestemt hendelse. 
-
- [Norsk standard. Krav til risikovurderinger.] 
+Konsekvens viser mulig følge av en bestemt hendelse [@4-norsk-standard]. 
+ 
 
 | Sannsynlighet | Beskrivelse |
 | --- | --- | 
@@ -292,13 +291,13 @@ Konsekvens viser mulig følge av en bestemt hendelse.
 Beregning av risikonivå  
 
 ```
-Risiko(h) = Sannsynlighet(h) * Konsekvens(h), hvor h - hendelse 
+Risiko = Sannsynlighet * Konsekvens   
 ```
-[Forelesning.V3.Risikoanalyse] 
+[@4-forelesning-risikoanalyse]
 
 4.2.2 Risikoanalyse 
 
-Tabell Risikoanalyse representerer uønskede hendelser, grad av sannsynlighet, grad av konsekvens, beregnet risikonivå og mulige tiltak. [Forelesning.V3.Risikoanalyse]  
+Tabell Risikoanalyse representerer uønskede hendelser, grad av sannsynlighet, grad av konsekvens, beregnet risikonivå og mulige tiltak [@4-forelesning-risikoanalyse].    
 
   
 
@@ -312,7 +311,7 @@ Tabell Risikoanalyse representerer uønskede hendelser, grad av sannsynlighet, g
 | 6 | Tap av rapport, kildekode, dokumentasjon ol. | Produkt / Prosjekt | 2 | 5 | 10 | Dokumentasjon og kildekode skal lagres både lokalt hos alle gruppemedlemmer og på de valgte skytjenester som GitHub, Overleaf osv. | Prøve å gjenopprette tapt dokumentasjon og kildekode. Ved behov starte på nytt fra siste checkpoint. 
 | 7 | Ønsket funksjonalitet blir ikke implementert | Produkt / Prosjekt | 2 | 4 | 8 | Under planlegging av prosjektarbeid bør gruppe sette realistiske mål over funksjonalitet som skal bli implementert i applikasjonen. | Gjøre endringer i prosjektplanen. Prøve å finne alternative løsninger. Prioritering av oppgaver. |
 
-#### 4.2.3 Risikomatrise  // TODO 
+#### 4.2.3 Risikomatrise   
 
 Risiko kan fremstilles ved hjelp av en risikomatrise, der sannsynlighet er plassert langs x – aksen og konsekvens langs y – aksen. Risikomatrise er delt inn i grønt, gul og rødt farge, som representerer risikonivå for en bestemt hendelse i risikotabellen. Tabellen risikoakseptkriterier viser behov for igangsettelse av risikoreduserende tiltak i forhold til risikonivå.   
 
