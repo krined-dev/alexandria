@@ -338,50 +338,45 @@ Det finnes mange forskjellige programmeringsverktøy. Følgende er beskrivelse a
 
 Prosjektgruppe har valgt å bruke Kotlin som programmeringsspråk. Grunnen til dette er at applikasjonen skal lages ved hjelp av Ktor rammeverket. Og det er bare Kotlin som kan bli brukt til dette formålet. Dersom prosjektgruppen velger et annet rammeverk, for eksempel Spring Boot, kan Java bli et godt alternativ. 
 
-Kotlin er et moderne programmeringsspråk. Det er forbedret versjon av Java, som er enklere i bruk, raskere å kompilere og inneholder en blanding av funksjonell og objektorientert programmering. Det har også andre fordeler, som clean code, null safety, extension functions, coroutines support osv. [https://www.imaginarycloud.com/blog/kotlin-vs-java/] 
-
+Kotlin er et moderne programmeringsspråk. Det er forbedret versjon av Java, som er enklere i bruk, raskere å kompilere og inneholder en blanding av funksjonell og objektorientert programmering. Det har også andre fordeler, som clean code, null safety, extension functions, coroutines support osv [@4-imaginarycloud.com].  
   
 **Web rammeverk** 
 
 Det finnes flere rammeverk som brukes til å skrive applikasjoner i Kotlin. Prosjektgruppe har bestemt seg for å utvikle applikasjonen som REST tjeneste med Ktor rammeverket av JetBrains.   
 
-Ktor er et asynkront mikrorammeverk som egner seg godt til utvikling av små applikasjoner i Kotlin. Både Kotlin, Ktor og IntelliJ IDEA er produkter laget av JetBrains. Dette gir et utmerket verktøystøtte for prosjekter.  Det kreves ikke så mye for å lage Ktor applikasjon, legge til ønsket funksjonalitet, endre konfigurasjon osv. https://ktor.io/idea/ 
+Ktor er et asynkront mikrorammeverk som egner seg godt til utvikling av små applikasjoner i Kotlin. Både Kotlin, Ktor og IntelliJ IDEA er produkter laget av JetBrains. Dette gir et utmerket verktøystøtte for prosjekter.  Det kreves ikke så mye for å lage Ktor applikasjon, legge til ønsket funksjonalitet, endre konfigurasjon osv [@4-ktor.io-idea].  
 
-Ktor er lett og fleksibelt rammeverk som lar man utvikle og strukturere applikasjonen slik en trenger. Ved behov kan man enkelt utvide applikasjonens funksjonalitet ved hjelp av plugins. https://ktor.io/   
+Ktor er lett og fleksibelt rammeverk som lar man utvikle og strukturere applikasjonen slik en trenger. Ved behov kan man enkelt utvide applikasjonens funksjonalitet ved hjelp av plugins [@4-ktor.io].   
 
 Kotlin er det eneste programmeringsspråk som kan brukes for utvikling av applikasjoner ved hjelp av Ktor rammeverket.   
 
 Spring Boot er fortsatt ledende rammeverk for utvikling av applikasjoner i Java. Den er godt dokumentert og er mye brukt blant utviklere. Dersom prosjektgruppe hadde valgt Java som programmeringsspråk, kunne Spring Boot være et godt alternativ til Ktor.    
 
-
 **IDE (Integrated Development Environment)**
 
 Prosjektgruppen er godt kjent med IntelliJ IDEA siden den ble mye brukt i løpet av studiet. Samtidig skal applikasjonen utvikles i Kotlin, og oppdragsgiveren prioriterer dette utviklingsmiljø også. Derfor ble den valgt for prosjektet vårt.   
 
-IntelliJ IDEA (Community Edition) er open source IDE, som egner seg best til utvikling av Kotlin applikasjoner. IntelliJ IDEA er utviklet og vedlikeholdt av JetBrains, har flere funksjoner og er godt egnet for rask programvareutvikling. Den har også gode muligheter for integrasjon med andre typer verktøy som Git og GitHub, Gradle og Docker Compose. Siden det er ikke mulig å utvikle Kotlin prosjekter i en annen IDE, finnes det ikke et bedre alternativ til IntelliJ IDEA. [https://www.jetbrains.com/idea/features/] 
-
+IntelliJ IDEA (Community Edition) er open source IDE, som egner seg best til utvikling av Kotlin applikasjoner. IntelliJ IDEA er utviklet og vedlikeholdt av JetBrains, har flere funksjoner og er godt egnet for rask programvareutvikling. Den har også gode muligheter for integrasjon med andre typer verktøy som Git og GitHub, Gradle og Docker Compose. Siden det er ikke mulig å utvikle Kotlin prosjekter i en annen IDE, finnes det ikke et bedre alternativ til IntelliJ IDEA [@4-jetbrains.com].  
  
-
 **Dev/deployment env**
 
 Docker Containere vs Virtual Machines 
 
 Prosjektgruppe har en god erfaring med bruk av Docker og Docker Compose, og derfor ble den valgt for prosjektet vårt.  
 
-Docker er et verktøy som brukes til utvikling, testing og kjøring av applikasjoner i Docker containere. En container inneholder alle nødvendige biblioteker, konfigurasjonsfiler og avhengigheter som kreves for å kunne kjøre applikasjonen. https://cloudacademy.com/blog/docker-vs-virtual-machines-differences-you-should-know/ 
+Docker er et verktøy som brukes til utvikling, testing og kjøring av applikasjoner i Docker containere. En container inneholder alle nødvendige biblioteker, konfigurasjonsfiler og avhengigheter som kreves for å kunne kjøre applikasjonen [@4-cloudacademy.com].  
 
-Docker Compose er et verktøy som brukes til å kjøre flere containere samtidig. https://www.kode24.no/artikkel/hva-er-greia-med-docker/74020891 
+Docker Compose er et verktøy som brukes til å kjøre flere containere samtidig [@4-kode24.no].  
 
-Det er flere fordeler ved bruk av Docker i programvareutvikling. Docker kan installeres på alle moderne operative systemer, har kort oppstartstid, lav innvirkning på OS og bruker ikke så mye plass på harddisken.  https://www.docker.com/resources/what-container/ 
+Det er flere fordeler ved bruk av Docker i programvareutvikling. Docker kan installeres på alle moderne operative systemer, har kort oppstartstid, lav innvirkning på OS og bruker ikke så mye plass på harddisken [@4-docker.com].   
 
-Docker containere har høy portabilitet og derfor kan bli enkelt flyttet og distribuert mellom ulike maskiner, og med dette forenkler deling av kode. https://circleci.com/blog/containers-vs-virtual-machines/  
+Docker containere har høy portabilitet og derfor kan bli enkelt flyttet og distribuert mellom ulike maskiner, og med dette forenkler deling av kode [@4-circleci.com].  
 
-Som et alternativ kan man vurdere bruk av virtuelle maskiner. I motsetning til Docker, det er flere ulemper enn fordeler med disse. Virtuelle maskiner har større innvirkning på OS, tregere og tar mye diskplass. https://www.docker.com/resources/what-container/  
+Som et alternativ kan man vurdere bruk av virtuelle maskiner. I motsetning til Docker, det er flere ulemper enn fordeler med disse. Virtuelle maskiner har større innvirkning på OS, tregere og tar mye diskplass [@4-docker.com].   
 
-Virtuelle maskiner innkapsler en hel maskin, mens Docker Containere innkapsler bare applikasjonen og utviklingsmiljø. Dette gjør deling, ombygning og distribusjon av kode utfordrende. Men virtuelle maskiner har mye bedre sikkerhet enn Docker Containere. https://circleci.com/blog/containers-vs-virtual-machines/  
+Virtuelle maskiner innkapsler en hel maskin, mens Docker Containere innkapsler bare applikasjonen og utviklingsmiljø. Dette gjør deling, ombygning og distribusjon av kode utfordrende. Men virtuelle maskiner har mye bedre sikkerhet enn Docker Containere [@4-circleci.com].  
 
-I enkelte prosjekter kan det være lurt å kombinere bruk av virtuelle maskiner og Docker Containere. https://circleci.com/blog/containers-vs-virtual-machines/   
-
+I enkelte prosjekter kan det være lurt å kombinere bruk av virtuelle maskiner og Docker Containere [@4-circleci.com].  
 
 **Relasjonsdatabase**
 
@@ -390,47 +385,41 @@ Det finnes mange forskjellige typer databaser, både NoSQL og SQL. Oppdragsgiver
 
 #### 4.3.2 Prosjektstyringsverktøy 
 
-Microsoft Teams 
+**Microsoft Teams** 
 
-Alle gruppemedlemmer er godt kjent med Microsoft Teams. Derfor ble den valgt som kommunikasjonsverktøy for hele prosjektperioden. Det ble etablert egen Teams gruppe. Microsoft Teams støtter organisering av møter via chat, videochat, lagring av filer og integrasjon med enkelte applikasjoner. [https://www.microsoft.com/en-us/microsoft-teams/group-chat-software] 
-
+Alle gruppemedlemmer er godt kjent med Microsoft Teams. Derfor ble den valgt som kommunikasjonsverktøy for hele prosjektperioden. Det ble etablert egen Teams gruppe. Microsoft Teams støtter organisering av møter via chat, videochat, lagring av filer og integrasjon med enkelte applikasjoner [@4-microsoft-teams].  
  
 **Jira Software vs Trello**
 
 Både Jira og Trello er populære agile prosjektstyringsverktøy. Begge to eies av Atlassian. Hver plattform har distinkte fordeler og ulemper og kan bli brukt i ulike tilfeller. Følgende er beskrivelse av hovedforskjeller ved disse to plattformer.  
 
-Jira er godt egnet til styring av prosjekter av type programvareutvikling. Den har flere smidige funksjoner, som kan brukes under prosjektarbeid. Blant disse er mulighet til å lage Sprints, Epics og User Stories, bruk av Markup language og labels, mulighet til å legge til filer og koble prosjektet til repositories. [https://www.atlassian.com/software/jira]  
+Jira er godt egnet til styring av prosjekter av type programvareutvikling. Den har flere smidige funksjoner, som kan brukes under prosjektarbeid. Blant disse er mulighet til å lage Sprints, Epics og User Stories, bruk av Markup language og labels, mulighet til å legge til filer og koble prosjektet til repositories [@4-atlassian.com-jira].    
 
-Jira Software støtter både Scrum og Kanban prosjekter, og er det mest populære verktøyet for Scrum Teams. Scrum Board er delt inn i tre hoveddeler: TO DO, IN PROGRESS og DONE. Denne inndelingen gir godt oversikt over prosjektets arbeidsflyt og bidrar til bedre kommunikasjon mellom gruppemedlemmer og fordeling av arbeidsoppgaver. [https://www.atlassian.com/software/jira]   
+Jira Software støtter både Scrum og Kanban prosjekter, og er det mest populære verktøyet for Scrum Teams. Scrum Board er delt inn i tre hoveddeler: TO DO, IN PROGRESS og DONE. Denne inndelingen gir godt oversikt over prosjektets arbeidsflyt og bidrar til bedre kommunikasjon mellom gruppemedlemmer og fordeling av arbeidsoppgaver [@4-atlassian.com-jira].     
 
-Trello er et enkelt verktøy som er basert på Kanban board. [https://trello.com/home] Den kan bli brukt for å visualisere ulike arbeidsflyt, men er ikke nok til å støtte store kompliserte prosjekter av type programvareutvikling. [https://technologyadvice.com/blog/information-technology/trello-vs-jira-choosing-an-agile-project-management-tool/#trello_vs_jira_which_is_right_for_your_business/] 
-
- 
+Trello er et enkelt verktøy som er basert på Kanban board [@4-trello.com]. Den kan bli brukt for å visualisere ulike arbeidsflyt, men er ikke nok til å støtte store kompliserte prosjekter av type programvareutvikling [@4-technologyadvice.com].   
 
 **Git og GitHub vs BitBucket**
 
 Alle gruppemedlemmer har en god erfaring med bruk av Git og GitHub siden det ble mye brukt i løpet av studiet. Derfor ble Git valgt som versjonskontrollsystem og GitHub som hosting for prosjektet vårt. En av de andre alternativene til lagring av kildekode er Bitbucket. 
 
-GitHub er fortsatt den største hosting for Git repository, og betjener et stort antall programvareutviklere med åpen kildekode. GitHub egner seg godt for store prosjekter, og har mulighet til å lage både offentlige og private repositorier. https://www.geeksforgeeks.org/difference-between-bitbucket-and-github/ 
+GitHub er fortsatt den største hosting for Git repository, og betjener et stort antall programvareutviklere med åpen kildekode. GitHub egner seg godt for store prosjekter, og har mulighet til å lage både offentlige og private repositorier [@4-geeksforgeeks.org].  
 
-GitHub støtter prosjekter som bruker Git versjonskontrollsystem, og lar utviklere å jobbe sammen om et prosjekt. Den inneholder et stort antall funksjoner som gjør prosjektarbeid enklere. For eksempel, Github støtter Markdown og kan brukes til skriving av rapporter og annen dokumentasjon. GitHub kan også integreres med Jira som er et viktig verktøy for styring av prosjektarbeid. https://www.geeksforgeeks.org/difference-between-bitbucket-and-github/ 
+GitHub støtter prosjekter som bruker Git versjonskontrollsystem, og lar utviklere å jobbe sammen om et prosjekt. Den inneholder et stort antall funksjoner som gjør prosjektarbeid enklere. For eksempel, Github støtter Markdown og kan brukes til skriving av rapporter og annen dokumentasjon. GitHub kan også integreres med Jira som er et viktig verktøy for styring av prosjektarbeid [@4-geeksforgeeks.org].   
 
-Bitbucket er en annen hosting som blir mer og mer populært blant utviklere. I utgangspunktet Bitbucket er fokusert på små prosjekter og lukket kildekode. Den støtter Git og Mercurial. Bitbucket integreres godt med Jira og Trello siden begge produktene er fra Atlassian. https://www.geeksforgeeks.org/difference-between-bitbucket-and-github/ 
-
+Bitbucket er en annen hosting som blir mer og mer populært blant utviklere. I utgangspunktet Bitbucket er fokusert på små prosjekter og lukket kildekode. Den støtter Git og Mercurial. Bitbucket integreres godt med Jira og Trello siden begge produktene er fra Atlassian [@4-geeksforgeeks.org].  
 
 #### 4.3.3 Utviklingsmetoder / metodikker 
 
-Alle gruppemedlemmer er godt kjent med agile utviklingsmetoder. Scrum og Kanban er to forskjellige strategier for implementering av et smidig prosjektstyringssystem. Selv om Scrum og Kanban er forskjellige, har de lignende prinsipper. Begge to hjelper Scrum Team til å styre utvikling av sluttprodukt og levere et bedre resultat. [https://www.atlassian.com/agile/kanban/kanban-vs-scrum]  
+Alle gruppemedlemmer er godt kjent med agile utviklingsmetoder. Scrum og Kanban er to forskjellige strategier for implementering av et smidig prosjektstyringssystem. Selv om Scrum og Kanban er forskjellige, har de lignende prinsipper. Begge to hjelper Scrum Team til å styre utvikling av sluttprodukt og levere et bedre resultat [@4-atlassian.com-kanban-vs-scrum].  
 
 **Scrum vs Kanban** 
 
-Scrum er en foretrukket metode for utvikling av programvare. Den består av tre store deler: roller, hendelser og artefakter. Prosjektgruppe har rollefordeling og ulike ansvarsområder. Prosjektleder styrer utviklingsprosess og sørger for at prosjektarbeid går som planlagt. Det å ha en leder i en gruppe er en stor fordel. Utviklingsprosess er inndelt i korte perioder med en fast lengde, sprinter. Hver sprint består av Sprint Planning, Sprint med Daily Scrum, Sprint Review og Sprint Retrospective. Hver del av sprinten har sitt mål og utførelsesteknikk. For bedre planlegging og styring av sprinter utarbeides det såkalte artefakter. Blant disse, Product Backlog, Sprint Backlog, Product Increment. Product Backlog inneholder en liste over aktiviteter og delaktiviteter. Dette gjør prosjektarbeid enda bedre og smidigere. [https://www.atlassian.com/agile/kanban/kanban-vs-scrum]  
+Scrum er en foretrukket metode for utvikling av programvare. Den består av tre store deler: roller, hendelser og artefakter. Prosjektgruppe har rollefordeling og ulike ansvarsområder. Prosjektleder styrer utviklingsprosess og sørger for at prosjektarbeid går som planlagt. Det å ha en leder i en gruppe er en stor fordel. Utviklingsprosess er inndelt i korte perioder med en fast lengde, sprinter. Hver sprint består av Sprint Planning, Sprint med Daily Scrum, Sprint Review og Sprint Retrospective. Hver del av sprinten har sitt mål og utførelsesteknikk. For bedre planlegging og styring av sprinter utarbeides det såkalte artefakter. Blant disse, Product Backlog, Sprint Backlog, Product Increment. Product Backlog inneholder en liste over aktiviteter og delaktiviteter. Dette gjør prosjektarbeid enda bedre og smidigere [@4-atlassian.com-kanban-vs-scrum].  
 
-I motsetning til Scrum brukes Kanban til slank produksjon. Den egner seg godt til mindre utviklingsprosjekter. Kanban har verken rollefordeling eller sprinter. Den brukes hovedsakelig til å visualisere kontinuerlig arbeidsflyt. [https://www.atlassian.com/agile/kanban/kanban-vs-scrum]  
+I motsetning til Scrum brukes Kanban til slank produksjon. Den egner seg godt til mindre utviklingsprosjekter. Kanban har verken rollefordeling eller sprinter. Den brukes hovedsakelig til å visualisere kontinuerlig arbeidsflyt [@4-atlassian.com-kanban-vs-scrum].  
 
-Prosjektgruppe er godt kjent med Scrum siden denne metodikken ble brukt i faget Systemutvikling i fjor.   
-
- 
+Prosjektgruppe er godt kjent med Scrum siden denne metodikken ble brukt i faget Systemutvikling i fjor.    
 
 #### 4.3.4 Dokumentasjon 
 
@@ -444,23 +433,19 @@ Selv om bruk av Markdown kan se vanskeligere for nybegynnere, den er stort sett 
 
 Ved å kombinere vanlig tekst med Markup symboler kan man style og strukturere teksten, legge til bilder, referanser, lage lister og tabeller mm. Det kan ta litt tid til å bli kjent med disse kommandoer, men det er absolutt verdt det.   
 
-Det er også mulig å nevne en bestemt person eller en gruppe på GitHub ved å skrive @ foran navnet. Ved hjelp av Git kan man spore endringer i dokumentet eller gå til en tidligere versjon.  
+Det er også mulig å nevne en bestemt person eller en gruppe på GitHub ved å skrive @ foran navnet. Ved hjelp av Git kan man spore endringer i dokumentet eller gå til en tidligere versjon [@4-docs.github.com].   
 
-https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/quickstart-for-writing-on-github 
-
- 
-
-Microsoft Word er mye enklere i bruk og har bedre sjekk for grammatiske- og stavefeil enn Markdown, GitHub. Derfor er det gunstig å sjekke teksten i Microsoft Word før den skal overføres til GitHib. I tillegg til Microsoft Word kan man bruke Endnote for å styre referanser. [https://endnote.com/]   
+Microsoft Word er mye enklere i bruk og har bedre sjekk for grammatiske- og stavefeil enn Markdown, GitHub. Derfor er det gunstig å sjekke teksten i Microsoft Word før den skal overføres til GitHib. I tillegg til Microsoft Word kan man bruke Endnote for å styre referanser [@4-endnote.com].  
 
 **Mermaid vs VisualParadigm** 
 
-Prosjektgruppe skal hovedsakelig bruke Mermaid for å lage forskjellige grafer og diagrammer. Mermaid er et JavaScript-basert verktøy, som bruker enkle kommandoer for å lage kompliserte diagrammer i Markdown og endre dem dynamisk. Ved hjelp av Mermaid kan man lage flowchart, sequence diagram, class diagram, gannt diagram, pie chart diagram, entity relationship diagram osv. Mermaid er integrert i GitHub, og det er mulig å lage grafer i GitHub’s README filer som kan bli aktuelle i vårt prosjekt. Det finnes også Mermaid plugins for mange andre tjenester, for eksempel Visual Studio Code og IntelliJ IDEA. [https://mermaid.js.org/#/]     
+Prosjektgruppe skal hovedsakelig bruke Mermaid for å lage forskjellige grafer og diagrammer. Mermaid er et JavaScript-basert verktøy, som bruker enkle kommandoer for å lage kompliserte diagrammer i Markdown og endre dem dynamisk. Ved hjelp av Mermaid kan man lage flowchart, sequence diagram, class diagram, gannt diagram, pie chart diagram, entity relationship diagram osv. Mermaid er integrert i GitHub, og det er mulig å lage grafer i GitHub’s README filer som kan bli aktuelle i vårt prosjekt. Det finnes også Mermaid plugins for mange andre tjenester, for eksempel Visual Studio Code og IntelliJ IDEA [@4-mermaid.js.org].       
 
-VisualParadigm er en alternativ type verktøy som kan bli brukt til å lage ulike diagrammer.  Ved hjelp av VisualParadigm kan man lage flowchart, UML class diagrams, use case diagrams, entity relationship diagrams, grafisk fremstilling av arbeidsflyten osv. Den inneholder en stor samling av ulike maler, som kunne bli brukt i prosjektet. Men ikke alle funksjonene er gratis, og den er heller ikke koblet til GitHub. Derfor vil bruk av Mermaid prioriteres. [https://online.visual-paradigm.com/ 
+VisualParadigm er en alternativ type verktøy som kan bli brukt til å lage ulike diagrammer.  Ved hjelp av VisualParadigm kan man lage flowchart, UML class diagrams, use case diagrams, entity relationship diagrams, grafisk fremstilling av arbeidsflyten osv. Den inneholder en stor samling av ulike maler, som kunne bli brukt i prosjektet. Men ikke alle funksjonene er gratis, og den er heller ikke koblet til GitHub. Derfor vil bruk av Mermaid prioriteres [@4-visual-paradigm.com].  
 
 **Jira Software** 
 
-Styring av prosjektarbeid skal gjennomføres ved hjelp av Jira Software. Det skal lages et Scrum prosjekt hvor planlagt og gjennomført arbeid skal visualiseres ved hjelp av Scrum Board, Roadmap osv. Jira Software skal brukes til etablering av diverse rapporter og grafer som dokumenterer gjennomført arbeid og arbeidsmengde for forskjellige oppgaver. Blant disse er burnup report, cumulative flow diagram, velocity report, sprint burndown chart osv. [https://www.atlassian.com/software/jira] 
+Styring av prosjektarbeid skal gjennomføres ved hjelp av Jira Software. Det skal lages et Scrum prosjekt hvor planlagt og gjennomført arbeid skal visualiseres ved hjelp av Scrum Board, Roadmap osv. Jira Software skal brukes til etablering av diverse rapporter og grafer som dokumenterer gjennomført arbeid og arbeidsmengde for forskjellige oppgaver. Blant disse er burnup report, cumulative flow diagram, velocity report, sprint burndown chart osv [4-atlassian.com-jira].  
 
 **Microsoft Excel** 
 
