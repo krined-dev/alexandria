@@ -278,8 +278,20 @@ Tabell Risikoanalyse representerer uønskede hendelser, grad av sannsynlighet, g
 
 #### 4.2.3 Risikomatrise  // TODO 
 
-Risiko kan fremstilles ved hjelp av en risikomatrise, der sannsynlighet er plassert langs x – aksen og konsekvens langs y – aksen. Risikomatrise er delt inn i grønt, gul og rødt farge, som representerer risikonivå for en bestemt hendelse i risikotabellen. [https://www.uib.no/hms-portalen/137268/hms-risikovurdering-og-sikker-jobbanalyse-sja#risikomatrise] 
+Risiko kan fremstilles ved hjelp av en risikomatrise, der sannsynlighet er plassert langs x – aksen og konsekvens langs y – aksen. Risikomatrise er delt inn i grønt, gul og rødt farge, som representerer risikonivå for en bestemt hendelse i risikotabellen. Tabellen risikoakseptkriterier viser behov for igangsettelse av risikoreduserende tiltak i forhold til risikonivå.   
 
+![Scrum](res_forprosjekt/fig-risikomatrise.png) 
+
+Figur: Risikomatrise (Danilina, Daria, 2023)
+
+
+| Nivå | Tiltak |
+| --- | --- |
+| Lavt | Aksepteres. |
+| Middels | Aksepteres. Kontinuerlig utførelse av risikoreduserende tiltak. |
+| Høyt |Aksepteres ikke. Risikoreduserende tiltak skal utføres umiddelbart. |
+
+Tabell: Risikoakseptkriterier
 
 ### 4.3 Drøfting og vurdering av ulike løsningsmetoder og analyse av forslag 
 
