@@ -1,3 +1,39 @@
+\begin{center}
+\hfill \break
+\large{UiT Norges arktiske universitet}\\
+\hfill \break
+\hfill \break
+\hfill \break
+
+\begin{tabular}{l}
+     Fakultet for Ingeniørvitenskap og Teknologi  \\
+     Institutt for Datateknologi og Beregningsorientert Ingeniørfag \\\\
+     \large{\textbf{REST API kodeverk}}\\
+     \hfill \break\\
+     \hfill \break\\     
+     \textbf{Nedrevold, Kristian}\\
+     \textbf{Danilina, Daria}\\
+     \hfill \break\\
+     Forprosjektrapport, 2023-Jan-25\\
+\end{tabular}
+
+\hfill \break
+\hfill \break
+\hfill \break
+\hfill \break
+\hfill \break
+\hfill \break
+\hfill \break
+\hfill \break
+\hfill \break
+\hfill \break
+\hfill \break
+\hfill \break
+\hfill \break
+\hfill \break
+\thispagestyle{empty} 
+\end{center}
+
 # Bachelorppgave 2023 - Forprosjekt
 
 ## Introduksjon
