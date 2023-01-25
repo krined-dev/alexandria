@@ -225,7 +225,7 @@ I starten av hvert prosjekt er det viktig å vurdere mulige risikoer som kan opp
 
 Det ble laget en risikotabell som viser en oversikt over mulige uønskede hendelser. Sannsynlighet og konsekvens vurderes for hver enkelt hendelse. Ved hjelp av en enkel formel beregnes det grad av risiko for gjennomføring av prosjektet. Ut fra resultater kan man vurdere behov for iverksetting av risikoreduserende tiltak. [Forelesning.V3.Risikoanalyse]       
 
-Begreper 
+**Begreper** 
 
 Uønsket hendelse er en hendelse som kan føre til tap av verdier.   
 
@@ -287,18 +287,14 @@ Risiko kan fremstilles ved hjelp av en risikomatrise, der sannsynlighet er plass
 
 Det finnes mange forskjellige programmeringsverktøy. Følgende er beskrivelse av teknologier som er aktuelt i vårt prosjekt.  
 
-**Programmeringsspråk**
-
-Kotlin   
+**Programmeringsspråk**   
 
 Prosjektgruppe har valgt å bruke Kotlin som programmeringsspråk. Grunnen til dette er at applikasjonen skal lages ved hjelp av Ktor rammeverket. Og det er bare Kotlin som kan bli brukt til dette formålet. Dersom prosjektgruppen velger et annet rammeverk, for eksempel Spring Boot, kan Java bli et godt alternativ. 
 
 Kotlin er et moderne programmeringsspråk. Det er forbedret versjon av Java, som er enklere i bruk, raskere å kompilere og inneholder en blanding av funksjonell og objektorientert programmering. Det har også andre fordeler, som clean code, null safety, extension functions, coroutines support osv. [https://www.imaginarycloud.com/blog/kotlin-vs-java/] 
 
   
-**Web rammeverk**
-
-Ktor vs Spring Boot 
+**Web rammeverk** 
 
 Det finnes flere rammeverk som brukes til å skrive applikasjoner i Kotlin. Prosjektgruppe har bestemt seg for å utvikle applikasjonen som REST tjeneste med Ktor rammeverket av JetBrains.   
 
@@ -379,7 +375,7 @@ Bitbucket er en annen hosting som blir mer og mer populært blant utviklere. I u
 
 Alle gruppemedlemmer er godt kjent med agile utviklingsmetoder. Scrum og Kanban er to forskjellige strategier for implementering av et smidig prosjektstyringssystem. Selv om Scrum og Kanban er forskjellige, har de lignende prinsipper. Begge to hjelper Scrum Team til å styre utvikling av sluttprodukt og levere et bedre resultat. [https://www.atlassian.com/agile/kanban/kanban-vs-scrum]  
 
-Scrum vs Kanban 
+**Scrum vs Kanban** 
 
 Scrum er en foretrukket metode for utvikling av programvare. Den består av tre store deler: roller, hendelser og artefakter. Prosjektgruppe har rollefordeling og ulike ansvarsområder. Prosjektleder styrer utviklingsprosess og sørger for at prosjektarbeid går som planlagt. Det å ha en leder i en gruppe er en stor fordel. Utviklingsprosess er inndelt i korte perioder med en fast lengde, sprinter. Hver sprint består av Sprint Planning, Sprint med Daily Scrum, Sprint Review og Sprint Retrospective. Hver del av sprinten har sitt mål og utførelsesteknikk. For bedre planlegging og styring av sprinter utarbeides det såkalte artefakter. Blant disse, Product Backlog, Sprint Backlog, Product Increment. Product Backlog inneholder en liste over aktiviteter og delaktiviteter. Dette gjør prosjektarbeid enda bedre og smidigere. [https://www.atlassian.com/agile/kanban/kanban-vs-scrum]  
 
@@ -393,7 +389,7 @@ Prosjektgruppe er godt kjent med Scrum siden denne metodikken ble brukt i faget 
 
 Alt prosjektarbeid skal bli godt dokumentert. Gjennom hele prosjektperioden skal det lages forskjellige rapporter, grafer og diagrammer.  
 
-Markdown vs Microsoft Word, Endnote   
+**Markdown vs Microsoft Word, Endnote**   
 
 Det finnes flere måter å skrive en rapport på. Tradisjonelt ble Microsoft Word og Endnote brukt til dette formål i løpet av studiet. Prosjektgruppe har valgt å bruke Markdown til å skrive rapporter og andre dokumenter i forbindelse med gjennomføring av prosjektet. En av grunnene er at GitHub som brukes til lagring av kildekode, støtter skriving og formattering av tekst i Markdown. 
 
@@ -409,17 +405,17 @@ https://docs.github.com/en/get-started/writing-on-github/getting-started-with-wr
 
 Microsoft Word er mye enklere i bruk og har bedre sjekk for grammatiske- og stavefeil enn Markdown, GitHub. Derfor er det gunstig å sjekke teksten i Microsoft Word før den skal overføres til GitHib. I tillegg til Microsoft Word kan man bruke Endnote for å styre referanser. [https://endnote.com/]   
 
-Mermaid vs VisualParadigm 
+**Mermaid vs VisualParadigm** 
 
 Prosjektgruppe skal hovedsakelig bruke Mermaid for å lage forskjellige grafer og diagrammer. Mermaid er et JavaScript-basert verktøy, som bruker enkle kommandoer for å lage kompliserte diagrammer i Markdown og endre dem dynamisk. Ved hjelp av Mermaid kan man lage flowchart, sequence diagram, class diagram, gannt diagram, pie chart diagram, entity relationship diagram osv. Mermaid er integrert i GitHub, og det er mulig å lage grafer i GitHub’s README filer som kan bli aktuelle i vårt prosjekt. Det finnes også Mermaid plugins for mange andre tjenester, for eksempel Visual Studio Code og IntelliJ IDEA. [https://mermaid.js.org/#/]     
 
 VisualParadigm er en alternativ type verktøy som kan bli brukt til å lage ulike diagrammer.  Ved hjelp av VisualParadigm kan man lage flowchart, UML class diagrams, use case diagrams, entity relationship diagrams, grafisk fremstilling av arbeidsflyten osv. Den inneholder en stor samling av ulike maler, som kunne bli brukt i prosjektet. Men ikke alle funksjonene er gratis, og den er heller ikke koblet til GitHub. Derfor vil bruk av Mermaid prioriteres. [https://online.visual-paradigm.com/ 
 
-Jira Software 
+**Jira Software** 
 
 Styring av prosjektarbeid skal gjennomføres ved hjelp av Jira Software. Det skal lages et Scrum prosjekt hvor planlagt og gjennomført arbeid skal visualiseres ved hjelp av Scrum Board, Roadmap osv. Jira Software skal brukes til etablering av diverse rapporter og grafer som dokumenterer gjennomført arbeid og arbeidsmengde for forskjellige oppgaver. Blant disse er burnup report, cumulative flow diagram, velocity report, sprint burndown chart osv. [https://www.atlassian.com/software/jira] 
 
-Microsoft Excel 
+**Microsoft Excel** 
 
 Microsoft Excel skal brukes til å lage og føre projektdagbok som gir en oversikt over brukt tid for hele prosjektet og forskjellige delaktiviteter samt viser detaljert beskrivelse av utført arbeid. Excel kan også benyttes til grafisk representering, for eksempel i form av sektordiagram.  
 
@@ -462,53 +458,52 @@ Microsoft Excel skal brukes til å lage og føre projektdagbok som gir en oversi
 
 Som utviklingsmetode ble det valgt Scrum rammeverket. I dette kapittelet skal det gis en kort beskrivelse av Scrum og Jira Software. 
 
-Scrum 
+**Scrum** 
 
 Scrum er det mest brukte smidige rammeverket, som benyttes til utvikling av innovative produkter og tjenester. Alle Scrum Team medlemmer prøver å oppnå det samme målet uansett hvilken rolle de har. [bok:essential scrum]  
 
-Scrum består av: 
+**Scrum består av:** 
 
-Roller: Product Owner, Scrum Master, Developers Team 
+**Roller:** Product Owner, Scrum Master, Developers Team 
 
-Hendelser: Sprint, Sprint Planning, Daily Scrum, Sprint Execution, Sprint Review, Sprint Retrospective, Product Backlog grooming 
+**Hendelser:** Sprint, Sprint Planning, Daily Scrum, Sprint Execution, Sprint Review, Sprint Retrospective, Product Backlog grooming 
 
-Artefakter: Product Backlog, Sprint Backlog og Product Increment 
+**Artefakter:** Product Backlog, Sprint Backlog og Product Increment 
 
 [bok:essential scrum]  
 
-Scrum Team 
+**Scrum Team** 
 
 Scrum Team er den grunnleggende enheten i Scrum. Det er et lite gruppe av mennesker, som består av Product Owner, Scrum Master og Developers. De har forskjellig ansvar og påvirkningsområder. [bok:guide]   
 
-Product Owner  
+**Product Owner**  
 
 Product Owner (en produkteier) representerer kunden/oppdragsgiver og er ansvarlig for at Scrum Teamet leverer mest verdi av produktet. En av de viktigste oppgavene til Product Owner er å prioritere elementene i Product Backlog. [bok:guide]        
 
-Scrum Master 
+**Scrum Master** 
 
 Scrum Master (en Scrum leder) er ansvarlig for etablering av Scrum. En av de viktigste oppgavene til Scrum Master er å sørge for at alle i prosjektgruppen forstår Scrum og bruker den på en riktig måte. Scrum Master er også et viktig bindeledd mellom Product Owner og Development Team. Scrum Master hjelper Product Owner med å definere en produktets verdi, og hjelper Development Team til å levere denne verdien. Den sørger for at Scrum Team fungerer godt og forbedrer seg hele tiden. [bok:guide]    
 
-Development Team 
+**Development Team** 
 
 Developers (utviklingsteam) er en selvorganisert gruppe av mennesker som gjør selve jobben. Blant oppgaver er planlegging av Sprinten, utarbeidelse av Sprint Backlog, tilpasning av arbeidsplanen og produktutvikling. [bok:guide]        
 
-Scrum Process 
+**Scrum Process** 
 
 Scrum Prosess starter med opprettelsen av Product Backlog.  
 
-Product Backlog 
+**Product Backlog** 
 
 Product Backlog er en liste over alle arbeidsoppgaver en prosjektgruppe kan gjøre. Denne listen er ikke fast og kan bli endret avhengig av situasjonen. Elementene i Product Backlog eies og prioriteres av Product Owner. Prosjektgruppe kan starte Scrum Sprint når det er nok elementer i Product Backlog. [bok:essential scrum]   
 
-Scrum Events 
+**Scrum Events** 
 
-Sprint 
+**Sprint**  
 
-![Scrum](res_forprosjekt/fig-what-is-scrum.png)
+Sprint er en kort tidsbegrenset periode, der Scrum Team jobber med å fullføre en del av arbeidsoppgaver fra Product Backlog. [bok:essential scrum]   
 
-Sprint er en kort tidsbegrenset periode, der Scrum Team jobber med å fullføre en del av arbeidsoppgaver fra Product Backlog. [bok:essential scrum]       
 
- 
+![Scrum](res_forprosjekt/fig-what-is-scrum.png) 
 
 The Scrum Framework 
 
@@ -516,29 +511,29 @@ Figur 1 Scrum Process
 
   
 
-Sprint Planning 
+**Sprint Planning** 
 
 Hver Sprint starter med Sprint Planning møte. Product Owner, Scrum Master og Developers Team jobber sammen for å bestemme de mest prioriterte elementene i Product Backlog og setter krav til dem. Alle elementene får estimat, som er innsatsnivå for hvert av disse elementene. Scrum Team bestemmer Sprint Goal, som viser hva den kommende Sprinten skal oppnå. Resultatet av dette møtet er utarbeidet Sprint Backlog. [bok:essential scrum]       
 
-Sprint Backlog 
+**Sprint Backlog** 
 
 Sprint Backlog har Sprint Goal og består av et sett med elementer fra Product Backlog, som ble valgt for denne Sprinten. I tillegg inneholder den en arbeidsplan for Developers Team, slik at de kunne levere Product Increment på slutten av Sprinten. [bok:guide]         
 
-Daily Scrum 
+**Daily Scrum** 
 
 Hver Sprint varer fra to til fire uker. Hver dag møtes prosjektgruppe for Daily Scrum, som er et kort møte, der alle svarer på tre spørsmål: hva gjorde du i går, hva vil du gjøre i dag og er det noen hindringer i veien. [bok:essential scrum]         
 
-Sprint Review 
+**Sprint Review** 
 
 Sprint Review utføres på slutten av Sprinten. Ett av de viktigste målene med Sprint Review er å kunne inspisere og tilpasse produktet som skal bygges. Scrum Team sammen med kunder og andre interesserte medlemmer diskuterer implementert funksjonalitet og setter krav til hva som skal gjøres videre. Det leveres Sprint anmeldelse. Product Owner oppdaterer Product Backlog basert på tilbakemeldinger fra kunden. [bok:essential scrum]         
 
-Sprint Retrospective 
+**Sprint Retrospective** 
 
 Sprint Retrospective også utføres på slutten av Sprinten. Den gir mulighet til å inspisere og tilpasse utviklingsprosess. Scrum Team samles for å diskutere hva som fungerer og ikke fungerer med Scrum, og hvilke forbedringstiltak skal utføres for at prosjektgruppe blir mer produktivt i neste sprinten.  [bok:essential scrum]        
 
  
 
-6.2 Jira Software 
+### 6.2 Jira Software 
 
 Jira’s Scrum Project Template er designet for å støtte Scrum prosessen. Mal for prosjektet inkluderer flere Jira’s funksjoner, som Roadmap, Epic, User Story, Timeback Sprints, Reports osv. I dette kapittelet skal det gis en kort beskrivelse av fremgangsmåte for å sette opp Scrum Project i Jira Software og de mest aktuelle Jira’ funksjoner. [jira software] 
 
@@ -550,8 +545,10 @@ Epics inkluderer en stor del av arbeid og er ofte delt inn i mindre deler, som U
 
 Scrum Master starter Sprint etter at de første elementene i Product Backlog er definert. Det er mulig å velge start og slutt dato, sette mål og tildele Sprinten bestemte oppgaver. Scrum Master stopper Sprint når den er ferdig. [jira software] 
 
+
 Roadmap gir en oversikt over alle Epics og viser hvor lang tid en bestemt Epic tar i løpet av Sprinten. [jira software] 
 ![Jira-2](res_forprosjekt/fig-jira-2.png)
+
 
 Scrum Board er delt inn tre hoveddeler: TO DO, IN PROGRESS og DONE. Development Team styrer sitt arbeid ved å flytte arbeidsoppgaver på forskjellige steder av Scrum Board. Det finnes også mulighet til å legge til ekstra deler, for eksempel TESTING. [jira software] 
 
@@ -564,17 +561,18 @@ Description automatically generated
 
 Figur 3 Jira Software 
 
+
 Jira Software gir mulighet til å lage diverse rapporter og grafer, som burnup rapport, velocity rapport, cycle time rapport, sprint burndown chart, cumulative flow diagram osv. Dette blir til en stor hjelp ved styring av prosjektarbeid og ferdigstillelse av nødvendig dokumentasjon. [jira software] 
 
-7 Arbeidsavtale / Rollefordeling 
+## 7 Arbeidsavtale / Rollefordeling 
 
-7.1 Samarbeidsavtale 
+### 7.1 Samarbeidsavtale 
 
 Se vedlegg 
 
-7.2 Organisering av ansvar  
+### 7.2 Organisering av ansvar  
 
-7.2.1 Rollefordeling / Prosjektorganisering / Organisasjonskart 
+#### 7.2.1 Rollefordeling / Prosjektorganisering / Organisasjonskart 
 
 Prosjektgruppe skal bruke Scrum som utviklingsmetode. Alle gruppemedlemmer i en Scrum Team skal jobbe sammen mot et felles mål. Oppdragsgiver er Helse Nord IKT, og Product Owner er Torkil Grindstein som er et viktig bindeledd mellom oppdragsgiver og resten av Scrum Team.  Scrum Master er Kristian Nedrevold, og er en prosjektleder som styrer prosjektarbeid. Prosjektgruppe (Developers Team) består av Kristian Nedrevold og Daria Danilina som skal jobbe sammen for å levere best mulig produkt til oppdragsgiver og utarbeide all nødvendig dokumentasjon. Organisasjonskart viser rollefordeling i en Scrum Team og er presentert i Figur 4.     
 
@@ -606,7 +604,7 @@ style E fill:#e6f5f7,stroke:#333,stroke-width:1px
 
 Figur 4 Organisasjonskart (Danilina, Daria, 2023) 
 
-7.2.2 Ansvarsfordeling 
+#### 7.2.2 Ansvarsfordeling 
 
 Prosjektgruppe består av to gruppemedlemmer. Begge to skal aktivt delta i planlegging av prosjektarbeid, utviklingen av selve systemet og ferdigstillelse av nødvendig dokumentasjon.  
 
@@ -618,6 +616,6 @@ Alle gruppemedlemmer skal fungere som utviklere gjennom hele prosjektperioden. D
 
 Alle gruppemedlemmer skal delta i interne møter som skal avholdes via Microsoft Teams. Det er satt minst ett møte i uka. I tillegg skal det gjennomføres korte daglige standup møter for å kontrollere at arbeidet går som planlagt samt løse eventuelle problemer.  
 
-7.3 Signering av avtalen 
+### 7.3 Signering av avtalen 
 
 Se vedlegg   
