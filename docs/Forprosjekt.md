@@ -498,7 +498,7 @@ Microsoft Excel skal brukes til å lage og føre projektdagbok som gir en oversi
 
 Prosjektgruppe har valgt Scrumban som utviklingsmetode. Scrumban er en hybrid av Scrum og Kanban som benytter Backlog for planlegging, prioritering og fordeling av arbeidsoppgaver og Kanban board for visualisering av prosjektets framgang []. [https://pmtips.xyz/2022/08/11/scrumban-an-overview/]
 
-FIGUR is here
+![Fig-1](res_forprosjekt/fig-scrumban.png)
 
 Figure: https://pmtips.xyz/2022/08/11/scrumban-an-overview/
 
@@ -506,7 +506,7 @@ Scrumban er iterativ prosess som kan deles inn i korte perioder. Lengde av hver 
 Som en del av Scrumban prosess etableres det en Backlog. Den inneholder en liste over elementer som kan bli utviklet i løpet av prosjektperioden. Antall elementer i Backlogen varierer, og nye elementer kan bli lagt til når som helst []. [https://teamhood.com/kanban/scrum-vs-kanban-vs-scrumban-how-do-they-compare/]     
 Elementene har prioritering og WIP begrensning. WIP står for «work-in-progress limit» og setter en grense for antall oppgaver som skal plasseres i «in progress» kolonne av Kanban board. Elementene med høyest prioritet skal utføres først. Estimering av elementer er valgfritt []. [https://teamhood.com/kanban/scrum-vs-kanban-vs-scrumban-how-do-they-compare/]   
 
-FIGUR is here
+![Fig-2](res_forprosjekt/fig-scrumban-board.png)
 https://blog.logrocket.com/product-management/what-is-scrumban-methodology-how-to-implement/#core-principles-of-scrumban
 
 Kanban board brukes til visualisering av kontinuerlig arbeidsflyt. Elementene fra Backlogen plasseres og tas av gruppemedlemmer etter pull prinsippet. Etter at man er ferdig med sin oppgave, tar en ny fra tavlen. [https://teamhood.com/kanban/scrum-vs-kanban-vs-scrumban-how-do-they-compare/]        
@@ -523,12 +523,12 @@ Kanban board bukes til styring av prosjektarbeid. Den er delt inn i tre kolonner
 Elementene fra Backloggen plasseres på tavla. Kanban prosjekt har tre hovedtyper elementer: epics, tasks og subtasks. Epics brukes til gruppering av elementer og kan bli koblet sammen ved hjelp av avhengigheter. Tasks er en primær type element og kan bli delt inn i mindre subtasks [@4-atlassian.com-jira].   
 Prosjektgruppe styrer sitt arbeid ved å ta og flytte arbeidsoppgaver på forskjellige steder av Kanban board. Oppgavene skal utføres etter høyest prioritet. 
  
-FIGUR is here
+![Fig-3](res_forprosjekt/kanban-board.png)
 Figur 2 Kanban Board, Jira Software @4-atlassian.com-jira []
 
 Kanban roadmap gir en oversikt over alle Epics og viser hvor lang tid en bestemt Epic tar i løpet av utviklingsprosessen [@4-atlassian.com-jira]. 
 
-FIGUR is here
+![Fig-4](res_forprosjekt/kanban-roadmap.png)
 Figur Kanban Roadmap, Jira Software [@4-atlassian.com-jira ]
 
 Jira Software gir også mulighet til å lage diverse rapporter og grafer (Average Cycle Time), som blir til en stor hjelp ved ferdigstillelse av nødvendig dokumentasjon [@4-atlassian.com-jira]. 
