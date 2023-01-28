@@ -445,7 +445,7 @@ VisualParadigm er en alternativ type verktøy som kan bli brukt til å lage ulik
 
 **Jira Software** 
 
-Styring av prosjektarbeid skal gjennomføres ved hjelp av Jira Software. Det skal lages et Scrum prosjekt hvor planlagt og gjennomført arbeid skal visualiseres ved hjelp av Scrum Board, Roadmap osv. Jira Software skal brukes til etablering av diverse rapporter og grafer som dokumenterer gjennomført arbeid og arbeidsmengde for forskjellige oppgaver. Blant disse er burnup report, cumulative flow diagram, velocity report, sprint burndown chart osv [4-atlassian.com-jira].  
+Styring av prosjektarbeid skal gjennomføres ved hjelp av Jira Software. Det skal lages et Scrum prosjekt hvor planlagt og gjennomført arbeid skal visualiseres ved hjelp av Scrum Board, Roadmap osv. Jira Software skal brukes til etablering av diverse rapporter og grafer som dokumenterer gjennomført arbeid og arbeidsmengde for forskjellige oppgaver. Blant disse er burnup report, cumulative flow diagram, velocity report, sprint burndown chart osv [@4-atlassian.com-jira].  
 
 **Microsoft Excel** 
 
@@ -601,7 +601,7 @@ Se vedlegg
 
 #### 7.2.1 Rollefordeling / Prosjektorganisering / Organisasjonskart 
 
-Prosjektgruppe skal bruke Scrum som utviklingsmetode. Alle gruppemedlemmer i en Scrum Team skal jobbe sammen mot et felles mål. Oppdragsgiver er Helse Nord IKT, og Product Owner er Torkil Grindstein som er et viktig bindeledd mellom oppdragsgiver og resten av Scrum Team.  Scrum Master er Kristian Nedrevold, og er en prosjektleder som styrer prosjektarbeid. Prosjektgruppe (Developers Team) består av Kristian Nedrevold og Daria Danilina som skal jobbe sammen for å levere best mulig produkt til oppdragsgiver og utarbeide all nødvendig dokumentasjon. Organisasjonskart viser rollefordeling i en Scrum Team og er presentert i Figur X.     
+Prosjektgruppe skal bruke Scrum som utviklingsmetode. Alle gruppemedlemmer i en Scrum Team skal jobbe sammen mot et felles mål. Oppdragsgiver er Helse Nord IKT, og Product Owner er Torkil Grindstein som er et viktig bindeledd mellom oppdragsgiver og resten av Scrum Team.  Scrum Master er Kristian Nedrevold, og er en prosjektleder som styrer prosjektarbeid. Prosjektgruppe (Developers Team) består av Kristian Nedrevold og Daria Danilina som skal jobbe sammen for å levere best mulig produkt til oppdragsgiver og utarbeide all nødvendig dokumentasjon. Organisasjonskart viser rollefordeling i en Scrum Team.      
 
 
 ```mermaid
@@ -629,7 +629,7 @@ style E fill:#e6f5f7,stroke:#333,stroke-width:1px
 ```
 
 
-Figur X Organisasjonskart (Danilina, Daria, 2023) 
+Figur Organisasjonskart (Danilina, Daria, 2023) 
 
 #### 7.2.2 Ansvarsfordeling 
 
