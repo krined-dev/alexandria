@@ -411,15 +411,22 @@ Bitbucket er en annen hosting som blir mer og mer populært blant utviklere. I u
 
 #### 4.3.3 Utviklingsmetoder / metodikker 
 
-Alle gruppemedlemmer er godt kjent med agile utviklingsmetoder. Scrum og Kanban er to forskjellige strategier for implementering av et smidig prosjektstyringssystem. Selv om Scrum og Kanban er forskjellige, har de lignende prinsipper. Begge to hjelper Scrum Team til å styre utvikling av sluttprodukt og levere et bedre resultat [@4-atlassian.com-kanban-vs-scrum].  
+Det finnes to populære agile utviklingsmetoder: Scrum og Kanban. Begge to har lignende prinsipper og brukes til styring av prosjektarbeid. 
 
-**Scrum vs Kanban** 
+**Scrum**
 
-Scrum er en foretrukket metode for utvikling av programvare. Den består av tre store deler: roller, hendelser og artefakter. Prosjektgruppe har rollefordeling og ulike ansvarsområder. Prosjektleder styrer utviklingsprosess og sørger for at prosjektarbeid går som planlagt. Det å ha en leder i en gruppe er en stor fordel. Utviklingsprosess er inndelt i korte perioder med en fast lengde, sprinter. Hver sprint består av Sprint Planning, Sprint med Daily Scrum, Sprint Review og Sprint Retrospective. Hver del av sprinten har sitt mål og utførelsesteknikk. For bedre planlegging og styring av sprinter utarbeides det såkalte artefakter. Blant disse, Product Backlog, Sprint Backlog, Product Increment. Product Backlog inneholder en liste over aktiviteter og delaktiviteter. Dette gjør prosjektarbeid enda bedre og smidigere [@4-atlassian.com-kanban-vs-scrum].  
+Scrum er en metode som egner seg godt for store utviklingsprosjekter. Den består av tre deler: roller, hendelser og artefakter. Prosjektgruppe er relativt stor og har rollefordeling: Project Owner, Scrum Master og Developers. Hver eneste person i prosjektgruppe har sitt eget ansvarsområde. Utviklingsprosess er delt inn i korte perioder med en fast lengde, sprinter. Hver Sprint består av Sprint Planning, Sprint med Daily Scrum, Sprint Review og Sprint Retrospective. Hver del av sprinten har sitt eget mål og utførelsesteknikk. I løpet av sprinten utarbeides det såkalte artefakter: Produkt Backlog, Sprint Backlog og Product Increment [@4-atlassian.com-kanban-vs-scrum].   
 
-I motsetning til Scrum brukes Kanban til slank produksjon. Den egner seg godt til mindre utviklingsprosjekter. Kanban har verken rollefordeling eller sprinter. Den brukes hovedsakelig til å visualisere kontinuerlig arbeidsflyt [@4-atlassian.com-kanban-vs-scrum].  
+**Kanban**
 
-Prosjektgruppe er godt kjent med Scrum siden denne metodikken ble brukt i faget Systemutvikling i fjor.    
+Kanban er en annen utviklingsmetode. I motsetning til Scrum, egner den seg godt for mindre prosjektgrupper. Kanban har ingen rollefordeling. Den er ikke inndelt i sprinter med fast lengde, og derfor mer fleksibelt enn Scrum. Kanban brukes til å visualisere kontinuerlig arbeidsflyt [@4-atlassian.com-kanban-vs-scrum].   
+
+**Scrumban**
+
+Prosjektgruppe har bestemt seg til å bruke det beste av begge metodene og valgt Scrumban, som er en hybrid av Scrum og Kanban.
+I likhet med Scrum, har Scrumban iterasjoner, der prosjektgruppe jobber med prioriterte oppgaver fra Backlog. Scrumban er mye mer fleksibelt enn Scrum, og Backloggen kan utvides med nye elementer i løpet av iterasjonen. Alle møtene er «on demand» og holdes når prosjektgruppen ser behov for det. Scrumban krever ikke så mye dokumentasjon enn Scrum, og dermed sparer tid som kan bli brukt til utvikling av prosjektet [@4-logrocket.com-scrumban]. 
+ 
+Prosjektgruppe bruker Kanban board for visualisering av arbeidsflyt og setter en grense for antall elementer som kan være i «in process» tilstand. Dette hjelper å finne «svakheter» i gruppens arbeid, øker effektiviteten av prosjektgruppe og reduserer sjansene for å ikke fullføre planlagt arbeid [@4-atlassian.com-wip-limits].  
 
 #### 4.3.4 Dokumentasjon 
 
@@ -445,7 +452,7 @@ VisualParadigm er en alternativ type verktøy som kan bli brukt til å lage ulik
 
 **Jira Software** 
 
-Styring av prosjektarbeid skal gjennomføres ved hjelp av Jira Software. Det skal lages et Scrum prosjekt hvor planlagt og gjennomført arbeid skal visualiseres ved hjelp av Scrum Board, Roadmap osv. Jira Software skal brukes til etablering av diverse rapporter og grafer som dokumenterer gjennomført arbeid og arbeidsmengde for forskjellige oppgaver. Blant disse er burnup report, cumulative flow diagram, velocity report, sprint burndown chart osv [@4-atlassian.com-jira].  
+Styring av prosjektarbeid skal gjennomføres ved hjelp av Jira Software. Prosjektgruppe skal lage et Kanban prosjekt, som bruker Roadmap og Kanban board for visualisering av arbeidsflyt. Jira Software skal også brukes til generering av diverse rapporter og diagrammer som dokumenterer prosjektarbeid[@4-atlassian.com-jira]. 
 
 **Microsoft Excel** 
 
@@ -462,7 +469,7 @@ Microsoft Excel skal brukes til å lage og føre projektdagbok som gir en oversi
 
 * Rammeverk: Ktor med Arrow 
 
-* Container: Docker 
+* Container: Docker / Docker Compose 
 
 * Relasjonsdatabase: MySQL 
 
@@ -482,167 +489,71 @@ Microsoft Excel skal brukes til å lage og føre projektdagbok som gir en oversi
 
 **Prosjektutvikling**
 
-* Utviklingsmetode: Scrum 
+* Utviklingsmetode: Scrumban 
 
 ## 6 Prosjektplan 
 
-### 6.1 Utviklingsmetode 
+### 6.1 Utviklingsmetode  
 
-Som utviklingsmetode ble det valgt Scrum rammeverket. I dette kapittelet skal det gis en kort beskrivelse av Scrum og Jira Software. 
+Prosjektgruppe har valgt Scrumban som utviklingsmetode. Scrumban er en hybrid av Scrum og Kanban som benytter Backlog for planlegging, prioritering og fordeling av arbeidsoppgaver og Kanban board for visualisering av prosjektets framgang [6-scrumban-overview].  
 
-**Scrum** 
+![Fig-1](res_forprosjekt/fig-scrumban.png)
+Figur: Beskrivelse [6-scrumban-overview].   
 
-Scrum er det mest brukte smidige rammeverket, som benyttes til utvikling av innovative produkter og tjenester. Alle Scrum Team medlemmer prøver å oppnå det samme målet uansett hvilken rolle de har [@6-book-essential-scrum].   
+Scrumban er iterativ prosess som kan deles inn i korte perioder. Lengde av hver periode kan variere fra en til fire uker og bestemmes av prosjektgruppen. Vanligvis tar en periode cirka 2 uker [6-scrum-vs-kanban-vs-scrumban].  
+Som en del av Scrumban prosess etableres det en Backlog. Den inneholder en liste over elementer som kan bli utviklet i løpet av prosjektperioden. Antall elementer i Backlogen varierer, og nye elementer kan bli lagt til når som helst [6-scrum-vs-kanban-vs-scrumban].    
+Elementene har prioritering og WIP begrensning. WIP står for «work-in-progress limit» og setter en grense for antall oppgaver som skal plasseres i «in progress» kolonne av Kanban board. Elementene med høyest prioritet skal utføres først. Estimering av elementer er valgfritt [6-scrum-vs-kanban-vs-scrumban].     
 
-**Scrum består av:** 
+![Fig-2](res_forprosjekt/fig-scrumban-board.png)
+Figur: Besrivelse [4-logrocket.com-scrumban]. 
 
-**Roller:** Product Owner, Scrum Master, Developers Team [@6-book-essential-scrum] 
-
-**Hendelser:** Sprint, Sprint Planning, Daily Scrum, Sprint Execution, Sprint Review, Sprint Retrospective, Product Backlog grooming [@6-book-essential-scrum] 
-
-**Artefakter:** Product Backlog, Sprint Backlog og Product Increment [@6-book-essential-scrum] 
-
-**Scrum Team** 
-
-Scrum Team er den grunnleggende enheten i Scrum. Det er et lite gruppe av mennesker, som består av Product Owner, Scrum Master og Developers. De har forskjellig ansvar og påvirkningsområder [@6-book-scrum-guiden].     
-
-**Product Owner**  
-
-Product Owner (en produkteier) representerer kunden/oppdragsgiver og er ansvarlig for at Scrum Teamet leverer mest verdi av produktet. En av de viktigste oppgavene til Product Owner er å prioritere elementene i Product Backlog [@6-book-scrum-guiden].          
-
-**Scrum Master** 
-
-Scrum Master (en Scrum leder) er ansvarlig for etablering av Scrum. En av de viktigste oppgavene til Scrum Master er å sørge for at alle i prosjektgruppen forstår Scrum og bruker den på en riktig måte. Scrum Master er også et viktig bindeledd mellom Product Owner og Development Team. Scrum Master hjelper Product Owner med å definere en produktets verdi, og hjelper Development Team til å levere denne verdien. Den sørger for at Scrum Team fungerer godt og forbedrer seg hele tiden [@6-book-scrum-guiden].    
-
-**Development Team** 
-
-Developers (utviklingsteam) er en selvorganisert gruppe av mennesker som gjør selve jobben. Blant oppgaver er planlegging av Sprinten, utarbeidelse av Sprint Backlog, tilpasning av arbeidsplanen og produktutvikling [@6-book-scrum-guiden].         
-
-**Scrum Process** 
-
-Scrum Prosess starter med opprettelsen av Product Backlog.  
-
-**Product Backlog** 
-
-Product Backlog er en liste over alle arbeidsoppgaver en prosjektgruppe kan gjøre. Denne listen er ikke fast og kan bli endret avhengig av situasjonen. Elementene i Product Backlog eies og prioriteres av Product Owner. Prosjektgruppe kan starte Scrum Sprint når det er nok elementer i Product Backlog [@6-book-essential-scrum].     
-
-**Scrum Events** 
-
-**Sprint**  
-
-Sprint er en kort tidsbegrenset periode, der Scrum Team jobber med å fullføre en del av arbeidsoppgaver fra Product Backlog [@6-book-essential-scrum].     
-
-
-![Scrum](res_forprosjekt/fig-what-is-scrum.png) 
-
-The Scrum Framework 
-
-Figur 1 Scrum Process [@6-scrum.com] 
-
-**Sprint Planning** 
-
-Hver Sprint starter med Sprint Planning møte. Product Owner, Scrum Master og Developers Team jobber sammen for å bestemme de mest prioriterte elementene i Product Backlog og setter krav til dem. Alle elementene får estimat, som er innsatsnivå for hvert av disse elementene. Scrum Team bestemmer Sprint Goal, som viser hva den kommende Sprinten skal oppnå. Resultatet av dette møtet er utarbeidet Sprint Backlog [@6-book-essential-scrum].         
-
-**Sprint Backlog** 
-
-Sprint Backlog har Sprint Goal og består av et sett med elementer fra Product Backlog, som ble valgt for denne Sprinten. I tillegg inneholder den en arbeidsplan for Developers Team, slik at de kunne levere Product Increment på slutten av Sprinten [@6-book-scrum-guiden].           
-
-**Daily Scrum** 
-
-Hver Sprint varer fra to til fire uker. Hver dag møtes prosjektgruppe for Daily Scrum, som er et kort møte, der alle svarer på tre spørsmål: hva gjorde du i går, hva vil du gjøre i dag og er det noen hindringer i veien [@6-book-essential-scrum].           
-
-**Sprint Review** 
-
-Sprint Review utføres på slutten av Sprinten. Ett av de viktigste målene med Sprint Review er å kunne inspisere og tilpasse produktet som skal bygges. Scrum Team sammen med kunder og andre interesserte medlemmer diskuterer implementert funksjonalitet og setter krav til hva som skal gjøres videre. Det leveres Sprint anmeldelse. Product Owner oppdaterer Product Backlog basert på tilbakemeldinger fra kunden [@6-book-essential-scrum].           
-
-**Sprint Retrospective** 
-
-Sprint Retrospective også utføres på slutten av Sprinten. Den gir mulighet til å inspisere og tilpasse utviklingsprosess. Scrum Team samles for å diskutere hva som fungerer og ikke fungerer med Scrum, og hvilke forbedringstiltak skal utføres for at prosjektgruppe blir mer produktivt i neste sprinten [@6-book-essential-scrum].        
-
-### 6.2 Jira Software 
-
-Jira’s Scrum Project Template er designet for å støtte Scrum prosessen. Mal for prosjektet inkluderer flere Jira’s funksjoner, som Roadmap, Epic, User Story, Timeback Sprints, Reports osv. I dette kapittelet skal det gis en kort beskrivelse av fremgangsmåte for å sette opp Scrum Project i Jira Software og de mest aktuelle Jira’ funksjoner [@4-atlassian.com-jira].  
-
-Scrum Master eller administrator lager et Scrum Prosjekt ved hjelp av Jira’s Scrum Project Template. Det ble valgt å bruke Team-Managed Template, som gjør styring av prosjektet mer fleksibelt. Det finnes også mulighet til å koble repositorier, dokumenter og andre filer til prosjektet [@4-atlassian.com-jira].   
-
-Først lages det en Product Backlog, som inkluderer alle elementene som kan bli utviklet. PBI (Product Backlog Item) skal ha en detaljert beskrivelse, prioritet og estimat. Til estimering av elementene i Product Backlog brukes såkalte Story Points. Story Points er basert på Fibonacci sekvens. Vanligvis varierer antall Story Points fra 1 til 13 for en Sprint [@6-lucidchart.com].  
-
-Epics inkluderer en stor del av arbeid og er ofte delt inn i mindre deler, som User Stories, Task, Subtasks og Bugs. Det kan ta flere Sprints for å fullføre en Epic. Forskjellige Epics kan bli koblet til hverandre ved hjelp av avhengigheter [@4-atlassian.com-jira].   
-
-Scrum Master starter Sprint etter at de første elementene i Product Backlog er definert. Det er mulig å velge start og slutt dato, sette mål og tildele Sprinten bestemte oppgaver. Scrum Master stopper Sprint når den er ferdig [@4-atlassian.com-jira].   
-
-
-Roadmap gir en oversikt over alle Epics og viser hvor lang tid en bestemt Epic tar i løpet av Sprinten [@4-atlassian.com-jira].   
-
-![Jira-2](res_forprosjekt/fig-jira-2.png)
-
-
-Scrum Board er delt inn tre hoveddeler: TO DO, IN PROGRESS og DONE. Development Team styrer sitt arbeid ved å flytte arbeidsoppgaver på forskjellige steder av Scrum Board. Det finnes også mulighet til å legge til ekstra deler, for eksempel TESTING [@4-atlassian.com-jira].   
-
+Kanban board brukes til visualisering av kontinuerlig arbeidsflyt. Elementene fra Backlogen plasseres og tas av gruppemedlemmer etter pull prinsippet. Etter at man er ferdig med sin oppgave, tar en ny fra tavlen [6-scrum-vs-kanban-vs-scrumban].         
+Prosjektgruppe skal møtes hver dag for korte standup møter. Målet med disse møtene er å gå gjennom gjennomført og pågående arbeid, se gjennom en liste med prioriterte oppgaver og finne løsninger til eventuelle problemer [4-logrocket.com-scrumban]. 
  
-![Jira-1](res_forprosjekt/fig-jira-1.png)
+På slutten av iterasjonen, samles prosjektgruppe for å diskutere gjennomført arbeid, implementert funksjonalitet og eventuelle mangler, tilleggskrav fra kunden, utviklingsprosess og nødvendig forbedringstiltak som vil gjøre prosjektgruppe mer produktiv neste iterasjon.
+Etter det starter prosjektgruppe planlegging av en ny iterasjon, justering og prioritering av elementer i Backloggen [6-agilealliance-scrumban].  
 
-Graphical user interface, application, Teams
+### 6.2 Jira Software
 
-Description automatically generated 
+Jira Software er et prosjektstyringsverktøy som skal brukes til å støtte Scrumban prosess. Prosjektet lages ved hjelp av Kanban Project Template. Ved å velge Team-Managed Template, kan man gjøre styring av prosjektet mer fleksibel. Det finnes også mulighet til å koble GitHub repository til prosjektet [@4-atlassian.com-jira]. 
+Kanban board bukes til styring av prosjektarbeid. Den er delt inn i tre kolonner: TO DO, IN PROGRESS og DONE. Det er mulig å endre navn eller legge til ekstra kolonner, for eksempel BACKLOG [@4-atlassian.com-jira].
+Elementene fra Backloggen plasseres på tavla. Kanban prosjekt har tre hovedtyper elementer: epics, tasks og subtasks. Epics brukes til gruppering av elementer og kan bli koblet sammen ved hjelp av avhengigheter. Tasks er en primær type element og kan bli delt inn i mindre subtasks [@4-atlassian.com-jira].   
+Prosjektgruppe styrer sitt arbeid ved å ta og flytte arbeidsoppgaver på forskjellige steder av Kanban board. Oppgavene skal utføres etter høyest prioritet. 
+ 
+![Fig-3](res_forprosjekt/kanban-board.png)
+Figur: Kanban Board, Jira Software [@4-atlassian.com-jira].  
 
-Figur 3 Jira Software 
+Kanban roadmap gir en oversikt over alle Epics og viser hvor lang tid en bestemt Epic tar i løpet av utviklingsprosessen [@4-atlassian.com-jira]. 
 
+![Fig-4](res_forprosjekt/kanban-roadmap.png)
+Figur: Kanban Roadmap, Jira Software [@4-atlassian.com-jira].
 
-Jira Software gir mulighet til å lage diverse rapporter og grafer, som burnup rapport, velocity rapport, cycle time rapport, sprint burndown chart, cumulative flow diagram osv. Dette blir til en stor hjelp ved styring av prosjektarbeid og ferdigstillelse av nødvendig dokumentasjon [@4-atlassian.com-jira].   
+Jira Software gir også mulighet til å lage diverse rapporter og grafer (Average Cycle Time), som blir til en stor hjelp ved ferdigstillelse av nødvendig dokumentasjon [@4-atlassian.com-jira]. 
 
 ## 7 Arbeidsavtale / Rollefordeling 
 
 ### 7.1 Samarbeidsavtale 
 
-Se vedlegg 
+Samarbeidsavtale (Vedlegg 1).   
 
 ### 7.2 Organisering av ansvar  
 
-#### 7.2.1 Rollefordeling / Prosjektorganisering / Organisasjonskart 
+#### 7.2.1 Rollefordeling / Prosjektorganisering   
 
-Prosjektgruppe skal bruke Scrum som utviklingsmetode. Alle gruppemedlemmer i en Scrum Team skal jobbe sammen mot et felles mål. Oppdragsgiver er Helse Nord IKT, og Product Owner er Torkil Grindstein som er et viktig bindeledd mellom oppdragsgiver og resten av Scrum Team.  Scrum Master er Kristian Nedrevold, og er en prosjektleder som styrer prosjektarbeid. Prosjektgruppe (Developers Team) består av Kristian Nedrevold og Daria Danilina som skal jobbe sammen for å levere best mulig produkt til oppdragsgiver og utarbeide all nødvendig dokumentasjon. Organisasjonskart viser rollefordeling i en Scrum Team.      
-
-
-```mermaid
-graph TD 
-
-    A(Oppdragsgiver: Helse Nord IKT) ---B(Product Owner: Torkil Grindstein) 
-
-    B --- C(Scrum Master: Kristian Nedrevold) 
-
-    C ---- D(Developer: Kristian Nedrevold) 
-
-    C ---- E(Developer: Daria Danilina) 
-
+Prosjektgruppe skal bruke Scrumban utviklingsmetode. Oppdragsgiver er Helse Nord IKT. Torkil Grindstein er en veileder fra Helse Nord IKT og er et viktig bindeledd mellom oppdragsgiveren og prosjektgruppe. Gruppen består av Kristian Nedrevold og Daria Danilina som skal jobbe sammen for å levere best mulig produkt til oppdragsgiver og utarbeide all nødvendig dokumentasjon.    
  
-
-style A fill:#b1ddf0,stroke:#333,stroke-width:1px 
-
-style B fill:#c7e2ed,stroke:#333,stroke-width:1px 
-
-style C fill:#c5e7ed,stroke:#333,stroke-width:1px 
-
-style D fill:#e6f5f7,stroke:#333,stroke-width:1px 
-
-style E fill:#e6f5f7,stroke:#333,stroke-width:1px 
-```
-
-
-Figur Organisasjonskart (Danilina, Daria, 2023) 
-
 #### 7.2.2 Ansvarsfordeling 
 
 Prosjektgruppe består av to gruppemedlemmer. Begge to skal aktivt delta i planlegging av prosjektarbeid, utviklingen av selve systemet og ferdigstillelse av nødvendig dokumentasjon.  
 
-Kristian Nedrevold er prosjektleder og kontaktperson for gruppen. Han er ansvarlig for å ta kontakt med eksterne kontakter (veiledere fra Helse Nord IKT) og styring av møter. Han har også fått en rolle som utviklingsleder, og er ansvarlig for styring av utviklingsprosessen og fordeling av arbeidsoppgaver.   
+Kristian Nedrevold er prosjektleder og kontaktperson for gruppen. Han er ansvarlig for å ta kontakt med eksterne veiledere (Helse Nord IKT) og styring av møter. Han har også fått en rolle som utviklingsleder, og er ansvarlig for styring av utviklingsprosessen og fordeling av arbeidsoppgaver.   
 
-Daria Danilina er dokumentansvarlig, og skal sikre at all nødvendig dokumentasjon er oppdatert og organisert på en riktig måte. Hun har også fått rolle som sekretær, og er ansvarlig for å ta referater fra møter. 
+Daria Danilina er dokumentansvarlig, og skal sikre at all nødvendig dokumentasjon er oppdatert og organisert på en riktig måte. Hun har også fått en rolle som sekretær, og er ansvarlig for å ta møtereferater. 
 
-Alle gruppemedlemmer skal fungere som utviklere gjennom hele prosjektperioden. De skal også sørge for at arbeidet med prosjektet går etter plan og finne mulige løsninger til oppståtte problemer. De skal også jobbe sammen med ferdigstillelse av nødvendig dokumentasjon, rapporter og diagrammer.     
+Alle gruppemedlemmer skal fungere som utviklere gjennom hele prosjektperioden. De skal også sørge for at arbeidet med prosjektet går etter plan og finne mulige løsninger til oppståtte problemer. De skal jobbe sammen med ferdigstillelse av nødvendig dokumentasjon, rapporter og diagrammer.     
 
-Alle gruppemedlemmer skal delta i interne møter som skal avholdes via Microsoft Teams. Det er satt minst ett møte i uka. I tillegg skal det gjennomføres korte daglige standup møter for å kontrollere at arbeidet går som planlagt samt løse eventuelle problemer.  
+Alle gruppemedlemmer skal delta i interne møter som skal avholdes via Microsoft Teams. Det er satt minst ett møte i uka. I tillegg skal det gjennomføres korte daglige møter for å kontrollere at arbeidet går som planlagt samt løse eventuelle problemer.  
 
 ### 7.3 Signering av avtalen 
 
-Se vedlegg   
+Samarbeidsavtalen er signert [Dato].    
