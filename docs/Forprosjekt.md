@@ -409,11 +409,25 @@ GitHub støtter prosjekter som bruker Git versjonskontrollsystem, og lar utvikle
 
 Bitbucket er en annen hosting som blir mer og mer populært blant utviklere. I utgangspunktet Bitbucket er fokusert på små prosjekter og lukket kildekode. Den støtter Git og Mercurial. Bitbucket integreres godt med Jira og Trello siden begge produktene er fra Atlassian [@4-geeksforgeeks.org].  
 
-#### 4.3.3 Utviklingsmetoder / metodikker [TODO] 
+#### 4.3.3 Utviklingsmetoder / metodikker 
 
-Alle gruppemedlemmer er godt kjent med agile utviklingsmetoder. Scrum og Kanban er to forskjellige strategier for implementering av et smidig prosjektstyringssystem. Selv om Scrum og Kanban er forskjellige, har de lignende prinsipper. Begge to hjelper Scrum Team til å styre utvikling av sluttprodukt og levere et bedre resultat [@4-atlassian.com-kanban-vs-scrum].  
+Det finnes to populære agile utviklingsmetoder: Scrum og Kanban. Begge to har lignende prinsipper og brukes til styring av prosjektarbeid. 
 
-**Scrumban** [TODO]  
+**Scrum**
+
+Scrum er en metode som egner seg godt for store utviklingsprosjekter. Den består av tre deler: roller, hendelser og artefakter. Prosjektgruppe er relativt stor og har rollefordeling: Project Owner, Scrum Master og Developers. Hver eneste person i prosjektgruppe har sitt eget ansvarsområde. Utviklingsprosess er delt inn i korte perioder med en fast lengde, sprinter. Hver Sprint består av Sprint Planning, Sprint med Daily Scrum, Sprint Review og Sprint Retrospective. Hver del av sprinten har sitt eget mål og utførelsesteknikk. I løpet av sprinten utarbeides det såkalte artefakter: Produkt Backlog, Sprint Backlog og Product Increment [@4-atlassian.com-kanban-vs-scrum].   
+
+**Kanban**
+
+Kanban er en annen utviklingsmetode. I motsetning til Scrum, egner den seg godt for mindre prosjektgrupper. Kanban har ingen rollefordeling. Den er ikke inndelt i sprinter med fast lengde, og derfor mer fleksibelt enn Scrum. Kanban brukes til å visualisere kontinuerlig arbeidsflyt [@4-atlassian.com-kanban-vs-scrum].   
+
+**Scrumban**
+
+Prosjektgruppe har bestemt seg til å bruke det beste av begge metodene og valgt Scrumban, som er en hybrid av Scrum og Kanban.
+I likhet med Scrum, har Scrumban iterasjoner, der prosjektgruppe jobber med prioriterte oppgaver fra Backlog. Scrumban er mye mer fleksibelt enn Scrum, og Backloggen kan utvides med nye elementer i løpet av iterasjonen. Alle møtene er «on demand» og holdes når prosjektgruppen ser behov for det. Scrumban krever ikke så mye dokumentasjon enn Scrum, og dermed sparer tid som kan bli brukt til utvikling av prosjektet. 
+https://blog.logrocket.com/product-management/what-is-scrumban-methodology-how-to-implement/#core-principles-of-scrumban
+Prosjektgruppe bruker Kanban board for visualisering av arbeidsflyt og setter en grense for antall elementer som kan være i «in process» tilstand. Dette hjelper å finne «svakheter» i gruppens arbeid, øker effektiviteten av prosjektgruppe og reduserer sjansene for å ikke fullføre planlagt arbeid.  
+[https://www.atlassian.com/agile/kanban/wip-limits]
 
 #### 4.3.4 Dokumentasjon 
 
@@ -437,9 +451,9 @@ Prosjektgruppe skal hovedsakelig bruke Mermaid for å lage forskjellige grafer o
 
 VisualParadigm er en alternativ type verktøy som kan bli brukt til å lage ulike diagrammer.  Ved hjelp av VisualParadigm kan man lage flowchart, UML class diagrams, use case diagrams, entity relationship diagrams, grafisk fremstilling av arbeidsflyten osv. Den inneholder en stor samling av ulike maler, som kunne bli brukt i prosjektet. Men ikke alle funksjonene er gratis, og den er heller ikke koblet til GitHub. Derfor vil bruk av Mermaid prioriteres [@4-visual-paradigm.com].  
 
-**Jira Software** [TODO] 
+**Jira Software** 
 
-Styring av prosjektarbeid skal gjennomføres ved hjelp av Jira Software. Det skal lages et Kanban prosjekt hvor planlagt og gjennomført arbeid skal visualiseres ved hjelp av Kanban Board, Roadmap osv. Jira Software skal brukes til etablering av diverse rapporter og grafer som dokumenterer gjennomført arbeid og arbeidsmengde for forskjellige oppgaver. [4-atlassian.com-jira].  
+Styring av prosjektarbeid skal gjennomføres ved hjelp av Jira Software. Prosjektgruppe skal lage et Kanban prosjekt, som bruker Roadmap og Kanban board for visualisering av arbeidsflyt. Jira Software skal også brukes til generering av diverse rapporter og diagrammer som dokumenterer prosjektarbeid[@4-atlassian.com-jira]. 
 
 **Microsoft Excel** 
 
@@ -480,31 +494,57 @@ Microsoft Excel skal brukes til å lage og føre projektdagbok som gir en oversi
 
 ## 6 Prosjektplan 
 
-### 6.1 Utviklingsmetode [TODO] 
+### 6.1 Utviklingsmetode  
 
-Som utviklingsmetode ble det valgt Scrumban rammeverket.   
+Prosjektgruppe har valgt Scrumban som utviklingsmetode. Scrumban er en hybrid av Scrum og Kanban som benytter Backlog for planlegging, prioritering og fordeling av arbeidsoppgaver og Kanban board for visualisering av prosjektets framgang []. [https://pmtips.xyz/2022/08/11/scrumban-an-overview/]
 
-**Scrumban** [TODO] 
+FIGUR is here
 
-### 6.2 Jira Software [TODO]
+Figure: https://pmtips.xyz/2022/08/11/scrumban-an-overview/
 
-Jira’s **Kanban** Project Template er designet for å støtte Scrumban prosessen. 
+Scrumban er iterativ prosess som kan deles inn i korte perioder. Lengde av hver periode kan variere fra en til fire uker og bestemmes av prosjektgruppen. Vanligvis tar en periode cirka 2 uker []. [https://teamhood.com/kanban/scrum-vs-kanban-vs-scrumban-how-do-they-compare/]    
+Som en del av Scrumban prosess etableres det en Backlog. Den inneholder en liste over elementer som kan bli utviklet i løpet av prosjektperioden. Antall elementer i Backlogen varierer, og nye elementer kan bli lagt til når som helst []. [https://teamhood.com/kanban/scrum-vs-kanban-vs-scrumban-how-do-they-compare/]     
+Elementene har prioritering og WIP begrensning. WIP står for «work-in-progress limit» og setter en grense for antall oppgaver som skal plasseres i «in progress» kolonne av Kanban board. Elementene med høyest prioritet skal utføres først. Estimering av elementer er valgfritt []. [https://teamhood.com/kanban/scrum-vs-kanban-vs-scrumban-how-do-they-compare/]   
+
+FIGUR is here
+https://blog.logrocket.com/product-management/what-is-scrumban-methodology-how-to-implement/#core-principles-of-scrumban
+
+Kanban board brukes til visualisering av kontinuerlig arbeidsflyt. Elementene fra Backlogen plasseres og tas av gruppemedlemmer etter pull prinsippet. Etter at man er ferdig med sin oppgave, tar en ny fra tavlen. [https://teamhood.com/kanban/scrum-vs-kanban-vs-scrumban-how-do-they-compare/]        
+Prosjektgruppe skal møtes hver dag for korte standup møter. Målet med disse møtene er å gå gjennom gjennomført og pågående arbeid, se gjennom en liste med prioriterte oppgaver og finne løsninger til eventuelle problemer. 
+[https://blog.logrocket.com/product-management/what-is-scrumban-methodology-how-to-implement/#core-principles-of-scrumban] 
+På slutten av iterasjonen, samles prosjektgruppe for å diskutere gjennomført arbeid, implementert funksjonalitet og eventuelle mangler, tilleggskrav fra kunden, utviklingsprosess og nødvendig forbedringstiltak som vil gjøre prosjektgruppe mer produktiv neste iterasjon.
+Etter det starter prosjektgruppe planlegging av en ny iterasjon, justering og prioritering av elementer i Backloggen. 
+https://www.agilealliance.org/scrumban/ 
+
+### 6.2 Jira Software
+
+Jira Software er et prosjektstyringsverktøy som skal brukes til å støtte Scrumban prosess. Prosjektet lages ved hjelp av Kanban Project Template. Ved å velge Team-Managed Template, kan man gjøre styring av prosjektet mer fleksibel. Det finnes også mulighet til å koble GitHub repository til prosjektet [@4-atlassian.com-jira]. 
+Kanban board bukes til styring av prosjektarbeid. Den er delt inn i tre kolonner: TO DO, IN PROGRESS og DONE. Det er mulig å endre navn eller legge til ekstra kolonner, for eksempel BACKLOG [@4-atlassian.com-jira].
+Elementene fra Backloggen plasseres på tavla. Kanban prosjekt har tre hovedtyper elementer: epics, tasks og subtasks. Epics brukes til gruppering av elementer og kan bli koblet sammen ved hjelp av avhengigheter. Tasks er en primær type element og kan bli delt inn i mindre subtasks [@4-atlassian.com-jira].   
+Prosjektgruppe styrer sitt arbeid ved å ta og flytte arbeidsoppgaver på forskjellige steder av Kanban board. Oppgavene skal utføres etter høyest prioritet. 
+ 
+FIGUR is here
+Figur 2 Kanban Board, Jira Software @4-atlassian.com-jira []
+
+Kanban roadmap gir en oversikt over alle Epics og viser hvor lang tid en bestemt Epic tar i løpet av utviklingsprosessen [@4-atlassian.com-jira]. 
+
+FIGUR is here
+Figur Kanban Roadmap, Jira Software [@4-atlassian.com-jira ]
+
+Jira Software gir også mulighet til å lage diverse rapporter og grafer (Average Cycle Time), som blir til en stor hjelp ved ferdigstillelse av nødvendig dokumentasjon [@4-atlassian.com-jira]. 
 
 ## 7 Arbeidsavtale / Rollefordeling 
 
 ### 7.1 Samarbeidsavtale 
 
-Samarbeidsavtale er vedlagt.  
+Samarbeidsavtale (Vedlegg 1).   
 
 ### 7.2 Organisering av ansvar  
 
-#### 7.2.1 Rollefordeling / Prosjektorganisering / Organisasjonskart  
+#### 7.2.1 Rollefordeling / Prosjektorganisering   
 
-Prosjektgruppe skal bruke Scrumban utviklingsmetode. Oppdragsgiver er Helse Nord IKT. Torkil Grindstein er en veileder fra Helse Nord IKT og er et viktig bindeledd mellom oppdragsgiveren og prosjektgruppe. Gruppen består av Kristian Nedrevold og Daria Danilina som skal jobbe sammen for å levere best mulig produkt til oppdragsgiver og utarbeide all nødvendig dokumentasjon. Organisasjonskart viser rollefordeling og er presentert i Figur [TODO].     
-
-**Organisasjonskart** [TODO]
-Figur Organisasjonskart (Danilina, Daria, 2023) 
-
+Prosjektgruppe skal bruke Scrumban utviklingsmetode. Oppdragsgiver er Helse Nord IKT. Torkil Grindstein er en veileder fra Helse Nord IKT og er et viktig bindeledd mellom oppdragsgiveren og prosjektgruppe. Gruppen består av Kristian Nedrevold og Daria Danilina som skal jobbe sammen for å levere best mulig produkt til oppdragsgiver og utarbeide all nødvendig dokumentasjon.    
+ 
 #### 7.2.2 Ansvarsfordeling 
 
 Prosjektgruppe består av to gruppemedlemmer. Begge to skal aktivt delta i planlegging av prosjektarbeid, utviklingen av selve systemet og ferdigstillelse av nødvendig dokumentasjon.  
