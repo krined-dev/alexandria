@@ -44,11 +44,10 @@ output: pdf_document
 
 # Bachelorppgave 2023 - Forprosjekt
 
-## Innholdsfortegnelse
-\newpage
-\tableofcontents
+# Innholdsfortegnelse
+1. [Introduksjon](#introduksjon)
 
-## Introduksjon
+## Introduksjon <a name="introduksjon"></a>
 
 Helse Nord IKT er et eget foretak under Helse Nord paraplyen som i hovedsak leverer tjenester til andre foretak i Helse Nord.
 Seksjon for systemutvikling i avdeling for Tjenesteutvikling er delt opp i ulike team. 
@@ -541,6 +540,7 @@ Microsoft Excel skal brukes til å lage og føre projektdagbok som gir en oversi
 Prosjektgruppe har valgt Scrumban som utviklingsmetode. Scrumban er en hybrid av Scrum og Kanban som benytter Backlog for planlegging, prioritering og fordeling av arbeidsoppgaver og Kanban board for visualisering av prosjektets framgang [@6-scrumban-overview].  
 
 ![Fig-scrumban](res_forprosjekt/fig-scrumban.png){#fig:fig-scrumban}
+
 Figur: Scrumban prosessen [@6-scrumban-overview].     
 
 Scrumban er iterativ prosess som kan deles inn i korte perioder. Lengde av hver periode kan variere fra en til fire uker og bestemmes av prosjektgruppen. Vanligvis tar en periode cirka 2 uker [@6-scrum-vs-kanban-vs-scrumban].  
@@ -550,7 +550,8 @@ Som en del av Scrumban prosess etableres det en Backlog. Den inneholder en liste
 Elementene har prioritering og WIP begrensning. WIP står for «work-in-progress limit» og setter en grense for antall oppgaver som skal plasseres i «in progress» kolonne av Kanban board. Elementene med høyest prioritet skal utføres først. Estimering av elementer er valgfritt [@6-scrum-vs-kanban-vs-scrumban].     
 
 ![Fig-scrumban-board](res_forprosjekt/fig-scrumban-board.png){#fig:fig-scrumban-board}
-Figur: Scrumban Board. WIP begrensning i "in process" kolonne [@4-logrocket.com-scrumban]. 
+
+Figur: Scrumban Board. WIP begrensning i "in progress" kolonne [@4-logrocket.com-scrumban]. 
 
 Kanban board brukes til visualisering av kontinuerlig arbeidsflyt. Elementene fra Backlogen plasseres og tas av gruppemedlemmer etter pull prinsippet. Etter at man er ferdig med sin oppgave, tar en ny fra tavlen [@6-scrum-vs-kanban-vs-scrumban].   
 
@@ -562,7 +563,7 @@ Etter det starter prosjektgruppe planlegging av en ny iterasjon, justering og pr
 
 ### 6.2 Jira Software
 
-Jira Software er et prosjektstyringsverktøy som skal brukes til å støtte Scrumban prosessen. Prosjektet lages ved hjelp av Kanban Project Template. Ved å velge Team-Managed Template, kan man gjøre styring av prosjektet mer fleksibel. Det finnes også mulighet til å koble GitHub repository til prosjektet [@4-atlassian.com-jira]. 
+Jira Software er et prosjektstyringsverktøy som skal brukes til å støtte Scrumban prosessen. Prosjektet lages ved hjelp av Kanban Project Template. Ved å velge Team-Managed Template, kan man gjøre styring av prosjektet mer fleksibelt. Det finnes også mulighet til å koble GitHub repository til prosjektet [@4-atlassian.com-jira]. 
 
 Kanban board bukes til styring av prosjektarbeid. Den er delt inn i tre kolonner: TO DO, IN PROGRESS og DONE. Det er mulig å endre navn eller legge til ekstra kolonner, for eksempel BACKLOG [@4-atlassian.com-jira].
 
@@ -571,11 +572,13 @@ Elementene fra Backloggen plasseres på tavla. Kanban prosjekt har tre hovedtype
 Prosjektgruppe styrer sitt arbeid ved å ta og flytte arbeidsoppgaver på forskjellige steder av Kanban board. Oppgavene skal utføres etter høyest prioritet. Kanban board er presentert i {@fig:fig-kanban-board}. 
  
 ![Fig-kanban-board](res_forprosjekt/kanban-board.png){#fig:fig-kanban-board}
+
 Figur: Kanban Board, laget i Jira Software [@4-atlassian.com-jira].  
 
 Kanban roadmap gir en oversikt over alle Epics og viser hvor lang tid en bestemt Epic tar i løpet av utviklingsprosessen [@4-atlassian.com-jira]. Roadmap er presentert i {@fig:fig-kanban-roadmap} 
 
 ![Fig-kanban-roadmap](res_forprosjekt/kanban-roadmap.png){#fig:fig-kanban-roadmap}
+
 Figur: Kanban Roadmap, Jira Software [@4-atlassian.com-jira].
 
 Jira Software gir også mulighet til å lage diverse rapporter og grafer (Average Cycle Time), som blir til en stor hjelp ved ferdigstillelse av nødvendig dokumentasjon [@4-atlassian.com-jira]. 
