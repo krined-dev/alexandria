@@ -1,3 +1,11 @@
+---
+title: "Forprosjekt"
+author: Kristian Nedrevold, Daria Danilina
+date: March 22, 2005
+geometry: "left=1cm,right=1cm,top=2cm,bottom=2cm"
+output: pdf_document
+---
+
 \begin{center}
 \hfill \break
 \large{UiT Norges arktiske universitet}\\
