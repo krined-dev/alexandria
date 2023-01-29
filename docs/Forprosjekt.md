@@ -1,3 +1,11 @@
+---
+title: "Forprosjekt"
+author: Kristian Nedrevold, Daria Danilina
+date: March 22, 2005
+geometry: "left=1cm,right=1cm,top=2cm,bottom=2cm"
+output: pdf_document
+---
+
 \begin{center}
 \hfill \break
 \large{UiT Norges arktiske universitet}\\
@@ -46,12 +54,21 @@ Helse Nord IKT er et eget foretak under Helse Nord paraplyen som i hovedsak leve
 Seksjon for systemutvikling i avdeling for Tjenesteutvikling er delt opp i ulike team. 
 
 ### Kvalitetsregister
-Denne oppgaven er på bestilling fra team
-for kvalitetsregister. Helse Nord IKT er en av to godkjente leverandører av nasjonale medisinske kvalitetsregister. Teamet jobber
-med å utvikle platform for kvalitetsregister samt de spesfikke register.
+Denne oppgaven er på bestilling fra team for kvalitetsregister. 
+
+Helse Nord IKT leverer i dag følgende kvalitetsregister:
+ * Norsk gynekologisk endoskopiregister
+ * Norsk register for invasiv kardiologi
+ * Norsk kvalitetsregister for behandling av spiseforstyrrelser
+ * Norsk register for arvelige og medfødte nevromuskulære sykdommer
+ * Register for Hidradenitis supprativa
+ * Norsk register for analinkontinens
+ * Norsk register for gastrokirurgi
+ * Norsk kvalitetsregister for endokarditt
+ * Nasjonalt kvalitetsregister for ryggkirurgi
 
 Et medisinsk kvalitetsregister er en registreringsløsning for medisinske data relatert til et spesifikt fagfelt, der data samles
- inn for å brukes til forskning. Et eksempel på et slikt register er Norsk Gynekologisk Endoskopi Register(NGER). 
+inn for å brukes til analyse og forskning. Et eksempel på et slikt register er Norsk Gynekologisk Endoskopi Register(NGER). 
 
 Registeret samler inn data om[@1-kvalitetsregistre.no]:
 
@@ -70,20 +87,35 @@ på tvers av behandlingssted [@1-kvalitetsregistre.no].
 
 [ref]https://www.kvalitetsregistre.no/register/gynekologi/norsk-gynekologisk-endoskopiregister
 
-På denne måten er nasjonale kvalitetsregister et viktig verktøy for å sikre lik og trygg behandling for alle pasienter uavhengig av geografisk
-tilhørlighet.
+Data samlet inn via slike medisinske kvalitetsregistre danner grunnlag for analyse og forskning som har som formål å gi økt behandlingskvalitet
+ved norske sykehus. Innregistrering av data til medisinske kvalitetsregistre blir ofte utført av helsepersonell, ofte i en hektisk verdag der de har
+mange andre arbeidsoppgaver. Det er av den grunn viktig at det er mulig å utføre registrering av data på en enkel måte med liten risiko for feil.
+Forbedring av kvalitet skjer ofte via kvalitetsforbedringsprosjekter. https://www.kvalitetsregistre.no/kvalitetsforbedring
+
+Helse Nord IKT leverer en platform for medisinske kvalitetsregister som er basert på OpenQreg. OqenQreg er en av tre godkjente platformer for medisinske kvalitetsregister i norge. 
+Teamet jobber med å utvikle platform for kvalitetsregister samt de spesfikke register som bruker platformen. https://www.nhn.no/tjenester/medisinske-kvalitetsregistre. 
+OpenQreg platformen er opprinnelig utviklet av Uppsala Clinical Research Centre som en åpen basis platform for kvalitetsregistre [kilde]. HN-IKT har nå sin egen "fork" av denne som vedlikeholdes
+og videreutvikles.
 
 ### 1.1 Bakgrunn for oppgaven
 
-For registering av medisinske kvalitetsparamtre brukes det diverse oppslagsverk. Kodeverk som brukes er [Skriv ned alle]. I tillegg kreves det
+For registering av medisinske kvalitetsparamtre brukes det diverse kodeverk. 
+Et praktisk eksempel på et kodeverk vi alle kjenner er postnummer. Et postnummer er en lenke til informasjon om et sted, den inneholder informasjon om hvilket fylke og by det referes til.
+Postnummer er et av kodeverkene applikasjonen skal omfavne. Den skal også omfavne medisinske kodeverk. De kobler en kode opp mot en diagose eller tilstand.
+
+Kodeverk som brukes er [Skriv ned alle]. I tillegg kreves det
 oppdatert informasjom om opplysninger som norske postnummer, kommuner, fylker osv [fyll på mer her]. Dette er i dag opplysninger som er hardkodet
-inn i applikasjonen, skal de oppdateres trenger de enten en "redeploy" eller kjøring av SQL script i produksjonsmiljøet. Dette er en prosess som 
-må gjentas for alle kvalitetsregistre. Det er heller ingen automatikk i oppdatering av koder, det skjer enten når utvikler oppdager utdaterte koder
-eller når kunde ber om oppdaterte koder.
+inn i applikasjonens database, og som lastes inn ved oppstart av applikasjonen. 
+
+Med dagens løsning kan hvert enkelt kvalitetsregister oppdage at diverse koder eller dokumenter ikke er oppdatert til nyeste versjon. Dette fører til
+at data ikke kan registreres korrekt av helsepersonellet som utfører registreringen. Når en sluttbruker oppdager dette vil den ta kontakt med 
+utviklerne via felles epost portal, en utvikler vil så opprette SQL script for oppdatering til nye koder. Dette scriptet sendes til drifts-personell
+som så kjører scriptet i produksjonsdatabasen. Prosessen gjentas for alle 13 kvalitetsregistre. Dette er en ugunstig prosess da den stjeler tid
+fra sluttbruker og utviklere.
 
 Det er derfor ønskelig med en felles tjeneste som kan hente inn koder fra ulike kilder(API, filer osv.) sammenfatte og versjonsstyre kodene. For
 så å levere de til register applikasjonene via et REST API. Det er altså ønskelig automatisere oppdaterings prosessen i størs mulig grad, 
-og på denne måten kunne tilby mest mulig oppdatert data.
+og på denne måten kunne tilby mest mulig oppdatert data. Dette vil være til gevinst for både sluttbruker og for utviklere.
 
 Det er da også naturlig at det implementeres en klient til APIet i registrenes felles kode. Da er det naturlig å tenke at 
 koder ikke lengre lagres i SQL databasen, men heller i en type in-memory database for raskere oppslag i applikasjonen. 
@@ -93,6 +125,11 @@ Det er også uttrykt et ønske om mulighet for laste versjonerte dokumenter inn 
 blobs. De skal også tilgjengeliggjøres via APIet. Dette ønskes da hvert kvalitetsregister lagrer og tilgjengeligjør et antall
 dokumenter for ulike formål. Det lagres også maler for meldinger som skal sendes til inbyggere. Det er da ønskelig å ha en
 felles portal for å oppdatere og tilgjengeligjøre disse dokumentene. 
+
+En siste årsak til ønske om en felles tjeneste for dokumenter og kodeverk er alderen og den akkumulerte tekniske gjelden i OpenQreg platformen. For å kunne vedlikeholde å videreutvikle
+platformen har team for kvalitetsregister begynt å migrere til en mer mikrotjeneste basert arkitektur, der funksjonelle deler av applikasjonen flyttes til egne tjenester. 
+Dette gjøres for å på lang sikt kunne slutte å bruke OpenQreg platformen. Ved å opprette en API basert applikasjon for styring av kodeverk og dokumenter blir opprettelse av fremtidig
+ny plattform arkitektur lettere.
 
 ### 1.2 Prosjektbeskrivelse og analyse
 Utviklingen vil foregå i to ulike kodebaser. Selve tjenesten som skal hente data fra eksterne kilder og i den eksisterende register koden der HTTP klient og in-memory database skal etableres.
