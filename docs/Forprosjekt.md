@@ -44,7 +44,10 @@ output: pdf_document
 
 # Bachelorppgave 2023 - Forprosjekt
 
-## Introduksjon
+# Innholdsfortegnelse
+1. [Introduksjon](#introduksjon)
+
+## Introduksjon <a name="introduksjon"></a>
 
 Helse Nord IKT er et eget foretak under Helse Nord paraplyen som i hovedsak leverer tjenester til andre foretak i Helse Nord.
 Seksjon for systemutvikling i avdeling for Tjenesteutvikling er delt opp i ulike team. 
@@ -290,7 +293,7 @@ For å kunne effektivt planlegge og gjennomføre prosjektarbeid er det ønskelig
 Det er planlagt å bruke ulike informasjonskilder slik som bøker, internettkilder, interne dokumenter og rapporter osv. For å kunne finne inspirasjon eller mer elegante løsninger kan det være aktuelt å bruke YouTube, Stackoverflow og informasjon fra forskjellige kurser/plattformer. 
 
 
-### 4.2 Riskanalyse 
+### 4.2 Risikoanalyse 
 
 #### 4.2.1 Bakgrunn for risikoanalyse 
 
@@ -309,6 +312,7 @@ Sannsynlighet viser i hvilken grad er det trolig at en bestemt hendelse vil innt
 Konsekvens viser mulig følge av en bestemt hendelse [@4-norsk-standard]. 
  
 
+Tabell: Sannsynlighet {#tbl:sannsynlighet}
 | Sannsynlighet | Beskrivelse |
 | --- | --- | 
 | 1 | veldig lite sannsynlig |
@@ -316,7 +320,8 @@ Konsekvens viser mulig følge av en bestemt hendelse [@4-norsk-standard].
 | 3 | sannsynlig |
 | 4 | meget sannsynlig |
 | 5 | svært sannsynlig |
- 
+
+Tabell: Konsekvens {#tbl:konsekvens} 
 | Konsekvens | Beskrivelse |
 | --- | --- |
 | 1 | ikke farlig |
@@ -325,7 +330,7 @@ Konsekvens viser mulig følge av en bestemt hendelse [@4-norsk-standard].
 | 4 | meget kritisk |
 | 5 | katastrofalt |
  
-Beregning av risikonivå  
+**Beregning av risikonivå** 
 
 ```
 Risiko = Sannsynlighet * Konsekvens   
@@ -335,7 +340,6 @@ Risiko = Sannsynlighet * Konsekvens
 4.2.2 Risikoanalyse 
 
 Tabell Risikoanalyse representerer uønskede hendelser, grad av sannsynlighet, grad av konsekvens, beregnet risikonivå og mulige tiltak [@4-forelesning-risikoanalyse].    
-
   
 
 | Nr. | Beskrivelse av hendelsen | Påvirker | Sannsynlighet | Konsekvens | Risikonivå | Forebyggende tiltak | Korrigerende tiltak |
@@ -352,19 +356,18 @@ Tabell Risikoanalyse representerer uønskede hendelser, grad av sannsynlighet, g
 
 Risiko kan fremstilles ved hjelp av en risikomatrise, der sannsynlighet er plassert langs x – aksen og konsekvens langs y – aksen. Risikomatrise er delt inn i grønt, gul og rødt farge, som representerer risikonivå for en bestemt hendelse i risikotabellen. Tabellen risikoakseptkriterier viser behov for igangsettelse av risikoreduserende tiltak i forhold til risikonivå.   
 
-![Scrum](res_forprosjekt/fig-risikomatrise.png) 
-
+![Fig-risikomatrise](res_forprosjekt/fig-risikomatrise.png){#fig:fig-risikomatrise} 
 Figur: Risikomatrise (Danilina, Daria, 2023)
 
 
+
+Tabell: Risikoakseptkriterier {#tbl:risikoakseptkriterier}
 | Nivå | Tiltak |
 | --- | --- |
 | Lavt | Aksepteres. |
 | Middels | Aksepteres. Kontinuerlig utførelse av risikoreduserende tiltak. |
-| Høyt |Aksepteres ikke. Risikoreduserende tiltak skal utføres umiddelbart. |
-
-Tabell: Risikoakseptkriterier
-
+| Høyt |Aksepteres ikke. Risikoreduserende tiltak skal utføres umiddelbart. | 
+ 
 ### 4.3 Drøfting og vurdering av ulike løsningsmetoder og analyse av forslag 
 
 #### 4.3.1 Programmeringsverktøy / Utviklingsverktøy 
@@ -452,18 +455,18 @@ Det finnes to populære agile utviklingsmetoder: Scrum og Kanban. Begge to har l
 
 **Scrum**
 
-Scrum er en metode som egner seg godt for store utviklingsprosjekter. Den består av tre deler: roller, hendelser og artefakter. Prosjektgruppe er relativt stor og har rollefordeling: Project Owner, Scrum Master og Developers. Hver eneste person i prosjektgruppe har sitt eget ansvarsområde. Utviklingsprosess er delt inn i korte perioder med en fast lengde, sprinter. Hver Sprint består av Sprint Planning, Sprint med Daily Scrum, Sprint Review og Sprint Retrospective. Hver del av sprinten har sitt eget mål og utførelsesteknikk. I løpet av sprinten utarbeides det såkalte artefakter: Produkt Backlog, Sprint Backlog og Product Increment [@4-atlassian.com-kanban-vs-scrum].   
+Scrum er en metode som egner seg godt for store utviklingsprosjekter. Den består av tre deler: roller, hendelser og artefakter. Scrum Team er relativt stor og har rollefordeling: Project Owner, Scrum Master og Developers. Hver eneste person i prosjektgruppe har sitt eget ansvarsområde. Utviklingsprosess er delt inn i korte perioder med en fast lengde, sprinter. Hver Sprint består av Sprint Planning, Sprint med Daily Scrum, Sprint Review og Sprint Retrospective. Hver del av sprinten har sitt eget mål og utførelsesteknikk. I løpet av sprinten utarbeides det såkalte artefakter: Produkt Backlog, Sprint Backlog og Product Increment [@4-atlassian.com-kanban-vs-scrum].   
 
 **Kanban**
 
-Kanban er en annen utviklingsmetode. I motsetning til Scrum, egner den seg godt for mindre prosjektgrupper. Kanban har ingen rollefordeling. Den er ikke inndelt i sprinter med fast lengde, og derfor mer fleksibelt enn Scrum. Kanban brukes til å visualisere kontinuerlig arbeidsflyt [@4-atlassian.com-kanban-vs-scrum].   
+Kanban er en annen utviklingsmetode. I motsetning til Scrum, egner den seg godt for mindre prosjekter. Kanban har ingen rollefordeling. Den er ikke inndelt i sprinter, og derfor mer fleksibelt enn Scrum. Kanban brukes til å visualisere kontinuerlig arbeidsflyt [@4-atlassian.com-kanban-vs-scrum].   
 
 **Scrumban**
 
 Prosjektgruppe har bestemt seg til å bruke det beste av begge metodene og valgt Scrumban, som er en hybrid av Scrum og Kanban.
 I likhet med Scrum, har Scrumban iterasjoner, der prosjektgruppe jobber med prioriterte oppgaver fra Backlog. Scrumban er mye mer fleksibelt enn Scrum, og Backloggen kan utvides med nye elementer i løpet av iterasjonen. Alle møtene er «on demand» og holdes når prosjektgruppen ser behov for det. Scrumban krever ikke så mye dokumentasjon enn Scrum, og dermed sparer tid som kan bli brukt til utvikling av prosjektet [@4-logrocket.com-scrumban]. 
  
-Prosjektgruppe bruker Kanban board for visualisering av arbeidsflyt og setter en grense for antall elementer som kan være i «in process» tilstand. Dette hjelper å finne «svakheter» i gruppens arbeid, øker effektiviteten av prosjektgruppe og reduserer sjansene for å ikke fullføre planlagt arbeid [@4-atlassian.com-wip-limits].  
+Prosjektgruppe bruker Kanban board for visualisering av arbeidsflyt og setter en grense for antall elementer som kan være i «in process» tilstand. Dette hjelper med å finne «svakheter» i gruppens arbeid, øker effektiviteten og reduserer sjansene for å ikke fullføre planlagt arbeid [@4-atlassian.com-wip-limits].  
 
 #### 4.3.4 Dokumentasjon 
 
@@ -493,7 +496,7 @@ Styring av prosjektarbeid skal gjennomføres ved hjelp av Jira Software. Prosjek
 
 **Microsoft Excel** 
 
-Microsoft Excel skal brukes til å lage og føre projektdagbok som gir en oversikt over brukt tid for hele prosjektet og forskjellige delaktiviteter samt viser detaljert beskrivelse av utført arbeid. Excel kan også benyttes til grafisk representering, for eksempel i form av sektordiagram.  
+Microsoft Excel skal brukes til å lage og føre projektdagbok som gir en oversikt over brukt tid for hele prosjektet og forskjellige delaktiviteter samt viser detaljert beskrivelse av utført arbeid. Excel kan også benyttes til grafisk representering, for eksempel i form av sektordiagram, gannt-diagram osv.  
 
 
 ### 4.4 Valg av løsning og utviklingsmetodikk 
@@ -520,7 +523,7 @@ Microsoft Excel skal brukes til å lage og føre projektdagbok som gir en oversi
 
 **Dokumentasjon**
 
-* Rapportskriving: Markdown / Overleaf, LaTex 
+* Rapportskriving: Markdown / LaTex 
 
 * Grafer og diagrammer: Mermaid, Jira Software, Excel 
 
@@ -528,41 +531,54 @@ Microsoft Excel skal brukes til å lage og føre projektdagbok som gir en oversi
 
 * Utviklingsmetode: Scrumban 
 
+## 5 Kostnadsoverslag [TODO]
+
 ## 6 Prosjektplan 
 
 ### 6.1 Utviklingsmetode  
 
-Prosjektgruppe har valgt Scrumban som utviklingsmetode. Scrumban er en hybrid av Scrum og Kanban som benytter Backlog for planlegging, prioritering og fordeling av arbeidsoppgaver og Kanban board for visualisering av prosjektets framgang [6-scrumban-overview].  
+Prosjektgruppe har valgt Scrumban som utviklingsmetode. Scrumban er en hybrid av Scrum og Kanban som benytter Backlog for planlegging, prioritering og fordeling av arbeidsoppgaver og Kanban board for visualisering av prosjektets framgang [@6-scrumban-overview].  
 
-![Fig-1](res_forprosjekt/fig-scrumban.png)
-Figur: Beskrivelse [6-scrumban-overview].   
+![Fig-scrumban](res_forprosjekt/fig-scrumban.png){#fig:fig-scrumban}
 
-Scrumban er iterativ prosess som kan deles inn i korte perioder. Lengde av hver periode kan variere fra en til fire uker og bestemmes av prosjektgruppen. Vanligvis tar en periode cirka 2 uker [6-scrum-vs-kanban-vs-scrumban].  
-Som en del av Scrumban prosess etableres det en Backlog. Den inneholder en liste over elementer som kan bli utviklet i løpet av prosjektperioden. Antall elementer i Backlogen varierer, og nye elementer kan bli lagt til når som helst [6-scrum-vs-kanban-vs-scrumban].    
-Elementene har prioritering og WIP begrensning. WIP står for «work-in-progress limit» og setter en grense for antall oppgaver som skal plasseres i «in progress» kolonne av Kanban board. Elementene med høyest prioritet skal utføres først. Estimering av elementer er valgfritt [6-scrum-vs-kanban-vs-scrumban].     
+Figur: Scrumban prosessen [@6-scrumban-overview].     
 
-![Fig-2](res_forprosjekt/fig-scrumban-board.png)
-Figur: Besrivelse [4-logrocket.com-scrumban]. 
+Scrumban er iterativ prosess som kan deles inn i korte perioder. Lengde av hver periode kan variere fra en til fire uker og bestemmes av prosjektgruppen. Vanligvis tar en periode cirka 2 uker [@6-scrum-vs-kanban-vs-scrumban].  
 
-Kanban board brukes til visualisering av kontinuerlig arbeidsflyt. Elementene fra Backlogen plasseres og tas av gruppemedlemmer etter pull prinsippet. Etter at man er ferdig med sin oppgave, tar en ny fra tavlen [6-scrum-vs-kanban-vs-scrumban].         
-Prosjektgruppe skal møtes hver dag for korte standup møter. Målet med disse møtene er å gå gjennom gjennomført og pågående arbeid, se gjennom en liste med prioriterte oppgaver og finne løsninger til eventuelle problemer [4-logrocket.com-scrumban]. 
+Som en del av Scrumban prosess etableres det en Backlog. Den inneholder en liste over elementer som kan bli utviklet i løpet av prosjektperioden. Antall elementer i Backlogen varierer, og nye elementer kan bli lagt til når som helst [@6-scrum-vs-kanban-vs-scrumban].    
+
+Elementene har prioritering og WIP begrensning. WIP står for «work-in-progress limit» og setter en grense for antall oppgaver som skal plasseres i «in progress» kolonne av Kanban board. Elementene med høyest prioritet skal utføres først. Estimering av elementer er valgfritt [@6-scrum-vs-kanban-vs-scrumban].     
+
+![Fig-scrumban-board](res_forprosjekt/fig-scrumban-board.png){#fig:fig-scrumban-board}
+
+Figur: Scrumban Board. WIP begrensning i "in progress" kolonne [@4-logrocket.com-scrumban]. 
+
+Kanban board brukes til visualisering av kontinuerlig arbeidsflyt. Elementene fra Backlogen plasseres og tas av gruppemedlemmer etter pull prinsippet. Etter at man er ferdig med sin oppgave, tar en ny fra tavlen [@6-scrum-vs-kanban-vs-scrumban].   
+
+Prosjektgruppen skal møtes hver dag for korte standup møter. Målet med disse møtene er å gå gjennom gjennomført og pågående arbeid, se gjennom en liste med prioriterte oppgaver og finne løsninger til eventuelle problemer [@4-logrocket.com-scrumban]. 
  
-På slutten av iterasjonen, samles prosjektgruppe for å diskutere gjennomført arbeid, implementert funksjonalitet og eventuelle mangler, tilleggskrav fra kunden, utviklingsprosess og nødvendig forbedringstiltak som vil gjøre prosjektgruppe mer produktiv neste iterasjon.
-Etter det starter prosjektgruppe planlegging av en ny iterasjon, justering og prioritering av elementer i Backloggen [6-agilealliance-scrumban].  
+På slutten av iterasjonen, samles prosjektgruppe for å diskutere gjennomført arbeid, implementert funksjonalitet, eventuelle mangler, tilleggskrav fra kunden, utviklingsprosess og nødvendig forbedringstiltak som vil gjøre prosjektgruppe mer produktiv neste iterasjon [@6-agilealliance-scrumban].
+
+Etter det starter prosjektgruppe planlegging av en ny iterasjon, justering og prioritering av elementer i Backloggen [@6-agilealliance-scrumban].  
 
 ### 6.2 Jira Software
 
-Jira Software er et prosjektstyringsverktøy som skal brukes til å støtte Scrumban prosess. Prosjektet lages ved hjelp av Kanban Project Template. Ved å velge Team-Managed Template, kan man gjøre styring av prosjektet mer fleksibel. Det finnes også mulighet til å koble GitHub repository til prosjektet [@4-atlassian.com-jira]. 
+Jira Software er et prosjektstyringsverktøy som skal brukes til å støtte Scrumban prosessen. Prosjektet lages ved hjelp av Kanban Project Template. Ved å velge Team-Managed Template, kan man gjøre styring av prosjektet mer fleksibelt. Det finnes også mulighet til å koble GitHub repository til prosjektet [@4-atlassian.com-jira]. 
+
 Kanban board bukes til styring av prosjektarbeid. Den er delt inn i tre kolonner: TO DO, IN PROGRESS og DONE. Det er mulig å endre navn eller legge til ekstra kolonner, for eksempel BACKLOG [@4-atlassian.com-jira].
+
 Elementene fra Backloggen plasseres på tavla. Kanban prosjekt har tre hovedtyper elementer: epics, tasks og subtasks. Epics brukes til gruppering av elementer og kan bli koblet sammen ved hjelp av avhengigheter. Tasks er en primær type element og kan bli delt inn i mindre subtasks [@4-atlassian.com-jira].   
-Prosjektgruppe styrer sitt arbeid ved å ta og flytte arbeidsoppgaver på forskjellige steder av Kanban board. Oppgavene skal utføres etter høyest prioritet. 
+
+Prosjektgruppe styrer sitt arbeid ved å ta og flytte arbeidsoppgaver på forskjellige steder av Kanban board. Oppgavene skal utføres etter høyest prioritet. Kanban board er presentert i {@fig:fig-kanban-board}. 
  
-![Fig-3](res_forprosjekt/kanban-board.png)
-Figur: Kanban Board, Jira Software [@4-atlassian.com-jira].  
+![Fig-kanban-board](res_forprosjekt/kanban-board.png){#fig:fig-kanban-board}
 
-Kanban roadmap gir en oversikt over alle Epics og viser hvor lang tid en bestemt Epic tar i løpet av utviklingsprosessen [@4-atlassian.com-jira]. 
+Figur: Kanban Board, laget i Jira Software [@4-atlassian.com-jira].  
 
-![Fig-4](res_forprosjekt/kanban-roadmap.png)
+Kanban roadmap gir en oversikt over alle Epics og viser hvor lang tid en bestemt Epic tar i løpet av utviklingsprosessen [@4-atlassian.com-jira]. Roadmap er presentert i {@fig:fig-kanban-roadmap} 
+
+![Fig-kanban-roadmap](res_forprosjekt/kanban-roadmap.png){#fig:fig-kanban-roadmap}
+
 Figur: Kanban Roadmap, Jira Software [@4-atlassian.com-jira].
 
 Jira Software gir også mulighet til å lage diverse rapporter og grafer (Average Cycle Time), som blir til en stor hjelp ved ferdigstillelse av nødvendig dokumentasjon [@4-atlassian.com-jira]. 
@@ -577,7 +593,7 @@ Samarbeidsavtale (Vedlegg 1).
 
 #### 7.2.1 Rollefordeling / Prosjektorganisering   
 
-Prosjektgruppe skal bruke Scrumban utviklingsmetode. Oppdragsgiver er Helse Nord IKT. Torkil Grindstein er en veileder fra Helse Nord IKT og er et viktig bindeledd mellom oppdragsgiveren og prosjektgruppe. Gruppen består av Kristian Nedrevold og Daria Danilina som skal jobbe sammen for å levere best mulig produkt til oppdragsgiver og utarbeide all nødvendig dokumentasjon.    
+Prosjektgruppe skal bruke Scrumban utviklingsmetode. Oppdragsgiver er Helse Nord IKT. Torkil Grindstein er en veileder fra Helse Nord IKT og er et viktig bindeledd mellom oppdragsgiveren og prosjektgruppen. Gruppen består av Kristian Nedrevold og Daria Danilina som skal jobbe sammen for å levere best mulig produkt til oppdragsgiver og utarbeide all nødvendig dokumentasjon.    
  
 #### 7.2.2 Ansvarsfordeling 
 
@@ -594,3 +610,14 @@ Alle gruppemedlemmer skal delta i interne møter som skal avholdes via Microsoft
 ### 7.3 Signering av avtalen 
 
 Samarbeidsavtalen er signert [Dato].    
+
+## Referanser
+
+## Liste over figurer
+
+## Liste over tabeller
+
+## Stikkordliste
+
+## Vedlegg
+Vedlegg 1. Samarbeidsavtale
