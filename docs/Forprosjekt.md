@@ -57,14 +57,15 @@ Denne oppgaven er på bestilling fra team for kvalitetsregister.
 
 Helse Nord IKT leverer i dag følgende kvalitetsregister:
  * Norsk gynekologisk endoskopiregister
+ * Norsk register for fedmekirurgi
+ * Nasjonalt register for ablasjonsbehandling og elektrofysiologi i Norge (AblaNor)
  * Norsk register for invasiv kardiologi
  * Norsk kvalitetsregister for behandling av spiseforstyrrelser
  * Norsk register for arvelige og medfødte nevromuskulære sykdommer
- * Register for Hidradenitis supprativa
  * Norsk register for analinkontinens
  * Norsk register for gastrokirurgi
  * Norsk kvalitetsregister for endokarditt
- * Nasjonalt kvalitetsregister for ryggkirurgi
+ * Nasjonalt kvalitetsregister for ryggkirurgi som er en paraply for tre underregister - Deformitet / Rygg / Nakke
 
 Et medisinsk kvalitetsregister er en registreringsløsning for medisinske data relatert til et spesifikt fagfelt, der data samles
 inn for å brukes til analyse og forskning. Et eksempel på et slikt register er Norsk Gynekologisk Endoskopi Register(NGER). 
@@ -102,9 +103,14 @@ For registering av medisinske kvalitetsparamtre brukes det diverse kodeverk.
 Et praktisk eksempel på et kodeverk vi alle kjenner er postnummer. Et postnummer er en lenke til informasjon om et sted, den inneholder informasjon om hvilket fylke og by det referes til.
 Postnummer er et av kodeverkene applikasjonen skal omfavne. Den skal også omfavne medisinske kodeverk. De kobler en kode opp mot en diagose eller tilstand.
 
-Kodeverk som brukes er [Skriv ned alle]. I tillegg kreves det
-oppdatert informasjom om opplysninger som norske postnummer, kommuner, fylker osv [fyll på mer her]. Dette er i dag opplysninger som er hardkodet
-inn i applikasjonens database, og som lastes inn ved oppstart av applikasjonen. 
+Kodeverk som brukes er 
+   * Postnummer
+   * ICD10
+   * NCMP
+   * NCSP
+
+Dette er i dag opplysninger som er hardkodet inn i applikasjonens database, og som lastes inn ved oppstart av applikasjonen. 
+Det er også andre kodeverm som er ønsket av registrene, men som ennå ikke er inkludert i applikasjonen. 
 
 Med dagens løsning kan hvert enkelt kvalitetsregister oppdage at diverse koder eller dokumenter ikke er oppdatert til nyeste versjon. Dette fører til
 at data ikke kan registreres korrekt av helsepersonellet som utfører registreringen. Når en sluttbruker oppdager dette vil den ta kontakt med 
@@ -126,7 +132,7 @@ dokumenter for ulike formål. Det lagres også maler for meldinger som skal send
 felles portal for å oppdatere og tilgjengeligjøre disse dokumentene. 
 
 En siste årsak til ønske om en felles tjeneste for dokumenter og kodeverk er alderen og den akkumulerte tekniske gjelden i OpenQreg platformen. For å kunne vedlikeholde å videreutvikle
-platformen har team for kvalitetsregister begynt å migrere til en mer mikrotjeneste basert arkitektur, der funksjonelle deler av applikasjonen flyttes til egne tjenester. 
+platformen har team for kvalitetsregister begynt å migrere til en mer modulær arkitektur, der funksjonelle deler av applikasjonen flyttes til egne tjenester. 
 Dette gjøres for å på lang sikt kunne slutte å bruke OpenQreg platformen. Ved å opprette en API basert applikasjon for styring av kodeverk og dokumenter blir opprettelse av fremtidig
 ny plattform arkitektur lettere.
 
