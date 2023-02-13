@@ -1,0 +1,32 @@
+\documentclass[a4paper, 12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[left=2cm, right=2cm, top=2cm, bottom=2cm]{geometry}
+\usepackage{float}
+\usepackage{parskip}
+\usepackage{graphics}
+\graphicspath{{./images/}} 
+ 
+\usepackage{parskip}
+\usepackage[T1]{fontenc}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Kravdokument}
+
+\begin{document}
+
+\include{0-forside}
+\include{0-revisjonshistorie}
+\include{0-innholdsfortegnelse}
+\include{1-innledning}
+\include{2-user-stories}
+\include{3-domenemodell}
+\include{4-prototyper}
+\include{5-definisjoner-akronymer-forkortelser}
+\include{6-referanser}
+\include{7-list-of-figures.tex}
+\include{8-list-of-tables.tex}
+\include{9-vedlegg.tex}
+
+\end{document}
