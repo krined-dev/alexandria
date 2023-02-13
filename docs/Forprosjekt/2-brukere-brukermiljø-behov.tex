@@ -1,0 +1,37 @@
+\section{Brukere, brukermiljø og behov}
+
+\subsection{Brukere}  
+
+Teknisk bruker av applikasjonen er da team for kvalitetsregister ved HN-IKT. Sluttbrukere som får levert ut kodene er registrene nevnt i introduksjon.\\ 
+
+\subsection{Brukermiljø}  
+
+Applikasjonen blir en intern del av kvalitetsregister mikrotjeneste plattformen, da den i hovedsak erstatter det som i dag er en tungvint og manuell prosess. Dette vil igjen påvirke brukerne av kvalitetsregistrene som vil oppleve at kvalitetsregistrene stadig er oppdatert med nyeste versjoner av kode verkene.
+
+Sluttbrukerne vil ikke oppleve endringer på bakgrunn av dette arbeidet i daglig bruk av registeret, i de tilfeller der kodeverk er oppdaterte.
+
+Den merkbare forskjellen er at det ikke vil være forsinkelse fra publisering av ny data til den er tilgjengelig i register-frontenden.
+ 
+\begin{landscape}
+\subsection{Sammendrag av brukerens behov} 
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|c|c|c|c|} 
+\hline
+Behov & Prioritet & Påvirker & Dagens Løsning & Foreslått løsning\\
+\hline\hline
+Automatisk datafangst & Høy & Alle brukere & Manuell innhenting & Hente fra eksterne kilder via web API\\
+\hline
+Versonstyring & Høy & Alle brukere & Manuelt ved lagring i database & Automatisk ved lagring i database\\
+\hline
+Tilgjengeligjøring av oppdatert data & Høy & Alle brukere & Manuell prosess & Automatisk ved innhenting av ny data\\
+\hline
+Mellomlagring i registeret & medium & Alle brukere & Lagres i MySql & Lagre in-memory. f.eks REDIS\\
+\hline
+Tilgjengeligjøring av dokumenter & medium & Alle brukere & Lagres i ressurs mapper & Lagre versjonert i database\\
+\hline
+\end{tabular}
+\caption{Sammendrag av brukerens behov}
+\label{table}
+\end{table}
+\end{landscape}
