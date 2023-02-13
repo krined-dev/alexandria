@@ -37,6 +37,11 @@ enum class CodeTypes {
     POSTCODE, ICD10, NCMP, NCSP
 }
 
+sealed interface TypeDefinition {
+    data class CodeDefinition(val type: CodeTypes, val description: String)
+    data class DocumentDefinition(val description: String, val name: String)
+}
+
 data class CodeRequest(
     val codeType: CodeTypes,
     val version: Version,
@@ -70,4 +75,18 @@ interface StorageService {
 
 interface RefreshService {
     fun runService()
+}
+
+interface FileService {
+    fun readFiles(definition: FileDefinition)
+}
+
+data class FileDefinition(
+    val path: String,
+    val type: TypeDefinition,
+    val fileType: FileType,
+)
+
+enum class FileType {
+    TAB, CSV, JSON, PDF,
 }
