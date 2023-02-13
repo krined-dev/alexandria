@@ -90,3 +90,37 @@ StorageService <|.. AlexandriaCode
 RefreshService <|.. StorageService
 ```
 
+
+```mermaid
+erDiagram
+    VERSION ||--o{ ICD10 : version
+     VERSION ||--o{ NCSP : version
+    VERSION ||--o{ DOCUMENT: version
+    VERSION {
+        long id PK
+        string name
+        string version
+        string description
+    }
+    
+    ICD10 {
+        long id PK
+        long versionId FK
+        string name
+        string description
+    }
+
+    NCSP {
+        long id PK
+        long versionId FK
+        string name
+        string description
+    }
+    DOCUMENT {
+        long id PK 
+        long versionId FK
+        string name
+        string bytes
+    }
+ 
+```
