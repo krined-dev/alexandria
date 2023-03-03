@@ -1,5 +1,6 @@
 package no.hnikt
 
+import io.ktor.http.*
 import io.ktor.serialization.kotlinx.json.*
 import io.ktor.server.application.*
 import io.ktor.server.engine.*
@@ -8,6 +9,7 @@ import io.ktor.server.netty.*
 import io.ktor.server.plugins.contentnegotiation.*
 import io.ktor.server.response.*
 import io.ktor.server.routing.*
+import io.ktor.server.routing.RoutingPath.Companion.root
 import io.micrometer.core.instrument.binder.jvm.JvmGcMetrics
 import io.micrometer.core.instrument.binder.jvm.JvmMemoryMetrics
 import io.micrometer.core.instrument.binder.system.ProcessorMetrics
@@ -74,6 +76,8 @@ fun Application.configureMicrometerMetrics() {
 
 fun Application.configureRouting() {
     routing {
-        TODO("not implemented")
+        get("/") {
+            call.respondText("Hello, World!")
+        }
     }
 }
