@@ -25,6 +25,7 @@ fun main() {
 fun Application.run() {
     configureSerialization()
     configureMicrometerMetrics()
+    configureRouting()
 }
 
 fun Application.configureSerialization() {
@@ -68,5 +69,11 @@ fun Application.configureMicrometerMetrics() {
         get("/metrics") {
             call.respond(appMicrometerRegistry.scrape())
         }
+    }
+}
+
+fun Application.configureRouting() {
+    routing {
+        TODO("not implemented")
     }
 }
