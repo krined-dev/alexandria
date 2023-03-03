@@ -1,4 +1,4 @@
-package no.hnikt.repository
+package no.hnikt.domain.iface
 
 import no.hnikt.domain.models.*
 
