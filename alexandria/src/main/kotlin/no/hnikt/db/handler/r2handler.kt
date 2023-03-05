@@ -1,11 +1,7 @@
 package no.hnikt.db.handler
 
-import arrow.core.Either
 import arrow.core.continuations.Effect
-import arrow.core.continuations.EffectScope
 import arrow.core.continuations.effect
-import arrow.core.left
-import arrow.core.right
 import io.r2dbc.spi.*
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.reactive.asFlow
@@ -24,10 +20,8 @@ sealed interface R2DBCError {
     object TransactionError : R2DBCError
 }
 
-context (ConnectionFactory)
 object R2DBC {
-
-    inline fun <E, T>transaction(
+    inline fun <E, T>ConnectionFactory.transaction(
         failWith: E,
         crossinline handler: context(Connection) () -> Effect<R2DBCError, T>): Effect<E, T> = effect {
         val connection = create().awaitFirst()

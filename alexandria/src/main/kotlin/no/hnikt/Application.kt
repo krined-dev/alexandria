@@ -19,5 +19,5 @@ fun Application.run() {
     configureSerialization()
     configureMicrometerMetrics()
     configureRouting()
-    fileReader()
+//    fileReader()
 }

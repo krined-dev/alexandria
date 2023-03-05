@@ -3,6 +3,7 @@ package no.hnikt.repository
 import arrow.core.continuations.Effect
 import arrow.core.continuations.EffectScope
 import arrow.core.continuations.effect
+import io.r2dbc.spi.ConnectionFactory
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.single
 import kotlinx.coroutines.flow.take
@@ -24,9 +25,9 @@ interface FileRepository {
 }
 
 context(R2DBC)
-fun fileRepository() = object : FileRepository {
+fun fileRepository(conn: ConnectionFactory) = object : FileRepository {
     override fun storeFile(file: StoredFile) = effect {
-        val inserted = transaction(FileRepositoryError.InsertError("Error inserting file: ${file.filename}")) {
+        val inserted = conn.transaction(FileRepositoryError.InsertError("Error inserting file: ${file.filename}")) {
             execute(
                 """
                 insert into files (filename, version, bytes, registry) values (?, ?, ?)
@@ -37,7 +38,7 @@ fun fileRepository() = object : FileRepository {
     }
 
     override fun selectFile(filename: String, registry: String): Effect<FileRepositoryError, StoredFile> = effect {
-        transaction(FileRepositoryError.FileNotFound(filename)) {
+        conn.transaction(FileRepositoryError.FileNotFound(filename)) {
             select(
                 """
                select * from files where filename = ? and registry = ? 
@@ -46,7 +47,7 @@ fun fileRepository() = object : FileRepository {
         }.bind().single()
     }
     override fun deleteFile(fileName: String, registry: String): Effect<FileRepositoryError, Long> =
-        transaction(FileRepositoryError.FileNotFound(fileName)) {
+        conn.transaction(FileRepositoryError.FileNotFound(fileName)) {
             execute("""delete from files where filename = ? and registry = ?""", fileName, registry)
         }
 
