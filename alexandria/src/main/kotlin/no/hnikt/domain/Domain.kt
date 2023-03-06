@@ -29,8 +29,8 @@ data class ExternalHttpRequest(
     val request: String,
 )
 
-data class ExternalHttpResponse(
-    val response: String,
+data class ExternalHttpResponse<T>(
+    val response: T,
 )
 
 enum class CodeTypes {
@@ -63,7 +63,7 @@ interface Source {
 }
 
 interface ExternalDsHttpClient {
-    fun retrieveDataFromExternal(source: Source, request: ExternalHttpRequest): ExternalHttpResponse
+    fun <T>retrieveDataFromExternal(source: Source, request: ExternalHttpRequest): ExternalHttpResponse<T>
 }
 
 interface StorageService {
